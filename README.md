@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Cozy-Cat-Cafe
+
+-As a user, I should be able to see all of the books available in Cozy Cat Cafe.
+-As a user, I should be able to use a search bar to find the book I am looking for and have the results display in the book container.
+-As a user, I should be able to generate a new cat companion when I click a button.
+-As a user, I should be able to see the Cozy Cat Cafe’s business contact information at all times.
+
+**************************************************
+
+Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,4 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Cozy-Cat-Cafe
+
