@@ -1,0 +1,363 @@
+[
+  {
+    id: 1,
+    title: "The Butterfly House",
+    plot: "Hospitals are supposed to be places of healing. But in the coronary care unit at one of Copenhagen’s leading medical centers, a nurse fills a syringe with an overdose of heart medication and stealthily enters the room of an older male patient.
+        Six days earlier, a paperboy on his route in central Copenhagen stumbles upon a macabre find: the naked body of a dead woman, lying in a fountain with arms marked with small incisions. Cause of death? Exsanguination—the draining of all the blood in her body.
+        Clearly, this is no ordinary murder. Copenhagen investigator Jeppe Kørner, recovering from a painful divorce and in the throes of a new relationship, takes on the case. His partner, Anette Werner, now on maternity leave after an unexpected pregnancy, is restless at home with a demanding newborn and an equally demanding husband. While Jeppe pounds the streets looking for answers, Anette decides to do a little freelance sleuthing. But operating on her own exposes her to dangers she can’t even begin to fathom.
+        As the investigation ventures into dark corners, it uncovers the ambition and greed that festers beneath the surface of caregiving institutions—all the more shocking for their depravity—and what Jeppe and Anette discover will turn their blood as cold as ice…",
+    author: "Katrine Engberg",
+    category: "Suspense & Thriller",
+    pages: 368,
+    image: "./images/thebutterflyhouse.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 2,
+    title: "The Woman Outside My Door",
+    plot: "All children have imaginary friends, Georgina tells herself. It’s perfectly normal, and they all grow out of it in the end. But when her seven-year-old son, Cody, tells her about New Granny, the friend he’s met in the park, Georgina is instantly suspicious. Something—call it maternal instinct—tells her he isn’t making it up.
+          But maybe Georgina is losing her mind. It wouldn’t be the first time, after all. And with her own mother’s recent death leaving her bereft and trying to cope with life as a busy working mom, it’s no wonder she’s feeling paranoid that Cody has invented a “New Granny” to replace his beloved grandmother.
+          Her husband, Bren, becomes the voice of reason, assuring Georgina that it’s just a game, the product of their son’s overactive imagination. But what if Cody’s imaginary friend is not so imaginary after all?",
+    author: "Rachel Ryan",
+    category:  "Suspense & Thriller",
+    pages: 288,
+    image: "./images/thewomanoutsidemydoor.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 3,
+    title: "We Are All the Same in the Dark",
+    plot: "It’s been a decade since Trumanell Branson disappeared, leaving only a bloody handprint behind. Her pretty face still hangs like a watchful queen on the posters on the walls of the town’s Baptist church, the police station, and in the high school. They all promise the same thing: We will find you. Meanwhile, Tru’s brother, Wyatt, lives as a pariah in the desolation of the old family house, cleared of wrongdoing by the police but tried and sentenced in the court of public opinion and in a new documentary about the crime.
+          When Wyatt finds a lost girl dumped in a field of dandelions, making silent wishes, he believes she is a sign. The town’s youngest cop, Odette Tucker, believes she is a catalyst that will ignite a seething town still waiting for its own missing girl to come home. But Odette can’t look away. She shares a wound that won’t close with the mute, one-eyed mystery girl. And she is haunted by her own history with the missing Tru.
+          Desperate to solve both cases, Odette fights to save the lost girl in the present and to dig up the shocking truth about a fateful night in the past—the night her friend disappeared, the night that inspired her to become a cop, the night that wrote them all a role in the town’s dark, violent mythology.
+          In this twisty psychological thriller, Julia Heaberlin paints unforgettable portraits of a woman and a girl who redefine perceptions of physical beauty and strength.",
+    author: "Julia Heaberlin",
+    category: "Suspense & Thriller",
+    pages: 368,
+    image: "./images/weareallthesameinthedark.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 4,
+    title: "Don't Believe It",
+    plot: "The Girl of Sugar Beach is the most watched documentary in television history—a riveting, true-life mystery that unfolds over twelve weeks and centers on a fascinating question: Did Grace Sebold murder her boyfriend, Julian, while on a Spring Break vacation, or is she a victim of circumstance and poor police work? Grace has spent the last ten years in a St. Lucian prison, and reaches out to filmmaker Sidney Ryan in a last, desperate attempt to prove her innocence.
+          As Sidney begins researching, she uncovers startling evidence, additional suspects, and timeline issues that were all overlooked during the original investigation. Before the series even finishes filming, public outcry leads officials to reopen the case. But as the show surges towards its final episodes, Sidney receives a letter saying that she got it badly, terribly wrong.
+          Sidney has just convinced the world that Grace is innocent. Now she wonders if she has helped to free a ruthless killer. Delving into Grace’s past, she peels away layer after layer of deception. But as Sidney edges closer to the real heart of the story, she must decide if finding the truth is worth risking her newfound fame, her career . . . even her life.",
+    author: "Charlie Donlea",
+    category: "Suspense & Thriller",
+    pages: 400,
+    image: "./images/dontbelieveit.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 5,
+    title: "One Last Stop",
+    plot: "For cynical twenty-three-year-old August, moving to New York City is supposed to prove her right: that things like magic and cinematic love stories don’t exist, and the only smart way to go through life is alone. She can’t imagine how waiting tables at a 24-hour pancake diner and moving in with too many weird roommates could possibly change that. And there’s certainly no chance of her subway commute being anything more than a daily trudge through boredom and electrical failures.
+          But then, there’s this gorgeous girl on the train.
+          Jane. Dazzling, charming, mysterious, impossible Jane. Jane with her rough edges and swoopy hair and soft smile, showing up in a leather jacket to save August’s day when she needed it most. August’s subway crush becomes the best part of her day, but pretty soon, she discovers there’s one big problem: Jane doesn’t just look like an old school punk rocker. She’s literally displaced in time from the 1970s, and August is going to have to use everything she tried to leave in her own past to help her. Maybe it’s time to start believing in some things, after all.
+          Casey McQuiston’s One Last Stop is a magical, sexy, big-hearted romance where the impossible becomes possible as August does everything in her power to save the girl lost in time.",
+    author: "Casey McQuiston",
+    category: "Romance",
+    pages: 432,
+    image: "./images/onelaststop.jpeg,
+    checkedOut: false
+  },
+  {
+    id: 6,
+    title: "The Lady Has a Past",
+    plot: "Investigative apprentice Lyra Brazier, the newest resident of Burning Cove, is unsettled when her boss suddenly disappears. Lyra knows something has happened to Raina Kirk, and tracks down her last known appearance at an exclusive hotel and health spa. The health spa is known for its luxurious offerings and prestigious clientele, and the wealthy, socialite background Lyra desperately wanted to leave behind is perfect for this undercover job. What Lyra lacks in investigative experience she makes up for in gut instinct, and her gut isn’t happy that she’s saddled with a partner by Luther Pell, Raina’s dangerous lover, who wants to bring in someone with more experience to help.
+          Instead of the suave, pistol-packing private eye she expected, though, Simon Cage is a mild-mannered antiquarian book dealer with a quiet, academic air, and a cool, remote gaze. Lyra suspects that Simon is much more than what he seems, and her instincts are confirmed when they arrive at the spa and pose as a couple: Simon has a unique gift that allows him to detect secrets, a skill that is crucial in finding Raina.
+          The unlikely duo falls down a rabbit hole of twisted rumors and missing socialites, discovering that the health spa is a façade for something far darker than they imagined. With a murderer in their midst, Raina isn't the only one in grave danger—Lyra is next.",
+    author: "Amanda Quickt",
+    category: "Romance",
+    pages: 336,
+    image: "./images/theladyhasapast.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 7,
+    title: "People We Meet on Vacation",
+    plot: "Poppy and Alex. Alex and Poppy. They have nothing in common. She’s a wild child; he wears khakis. She has insatiable wanderlust; he prefers to stay home with a book. And somehow, ever since a fateful car share home from college many years ago, they are the very best of friends. For most of the year they live far apart—she’s in New York City, and he’s in their small hometown—but every summer, for a decade, they have taken one glorious week of vacation together.
+          Until two years ago, when they ruined everything. They haven't spoken since.
+          Poppy has everything she should want, but she’s stuck in a rut. When someone asks when she was last truly happy, she knows, without a doubt, it was on that ill-fated, final trip with Alex. And so, she decides to convince her best friend to take one more vacation together—lay everything on the table, make it all right. Miraculously, he agrees.
+          Now she has a week to fix everything. If only she can get around the one big truth that has always stood quietly in the middle of their seemingly perfect relationship. What could possibly go wrong?",
+    author: "Emily Henry",
+    category: "Romance",
+    pages: 400,
+    image: "./images/peoplewemeetonvacation.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 8,
+    title: "Neon Gods",
+    plot: "Society darling Persephone Dimitriou plans to flee the ultra-modern city of Olympus and start over far from the backstabbing politics of the Thirteen Houses. But all that's ripped away when her mother ambushes her with an engagement to Zeus, the dangerous power behind their glittering city's dark facade.
+        With no options left, Persephone flees to the forbidden undercity and makes a devil's bargain with a man she once believed a myth...a man who awakens her to a world she never knew existed.
+        Hades has spent his life in the shadows, and he has no intention of stepping into the light. But when he finds that Persephone can offer a little slice of the revenge he's spent years craving, it's all the excuse he needs to help her—for a price. Yet every breathless night spent tangled together has given Hades a taste for Persephone, and he'll go to war with Olympus itself to keep her close...",
+    author: "Katee Robert",
+    category: "Romance",
+    pages: 384,
+    image: "./images/neongods.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 9,
+    title: "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the Teachings of Plants",
+    plot: "Drawing on her life as an indigenous scientist, and as a woman, Kimmerer shows how other living beings—asters and goldenrod, strawberries and squash, salamanders, algae, and sweetgrass—offer us gifts and lessons, even if we've forgotten how to hear their voices. In reflections that range from the creation of Turtle Island to the forces that threaten its flourishing today, she circles toward a central argument: that the awakening of ecological consciousness requires the acknowledgment and celebration of our reciprocal relationship with the rest of the living world. For only when we can hear the languages of other beings will we be capable of understanding the generosity of the earth, and learn to give our own gifts in return.",
+    author: "Robin Wall Kimmerer",
+    category: "Folklore & Mythology",
+    pages: 408,
+    image: "./images/braidingsweetgrass.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 10,
+    title: "Women Who Run with the Wolves: Myths and Stories of the Wild Woman Archetype",
+    plot: "Within every woman there lives a powerful force, filled with good instincts, passionate creativity, and ageless knowing. She is the Wild Woman, who represents the instinctual nature of women. But she is an endangered species. For though the gifts of wildish nature belong to us at birth, society’s attempt to “civilize” us into rigid roles has muffled the deep, life-giving messages of our own souls.
+          In Women Who Run with the Wolves, Dr. Clarissa Pinkola Estés unfolds rich intercultural myths, fairy tales, folk tales, and stories, many from her own traditions, in order to help women reconnect with the fierce, healthy, visionary attributes of this instinctual nature. Through the stories and commentaries in this remarkable book, we retrieve, examine, love, and understand the Wild Woman, and hold her against our deep psyches as one who is both magic and medicine.",
+    author: "Clarissa Pinkola Estes Phd",
+    category: "Folklore & Mythology",
+    pages: 608,
+    image: "./images/womenwhorunwiththewolves.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 11,
+    title: "The Secrets of the Kings",
+    plot: "When twenty-four-year-old Alex Kincaid inherits a gold mask from a mysterious benefactor, her only question is why. The following day, she is the victim of a brutal assault. Are these events related? Could these happenings also be linked to the terrifying recurring nightmares haunting Alex every night?
+          Alex soon finds, much to her shock, that she is now a Mask Bearer. This ancient secret society is dedicated to guarding the knowledge and power of the venerable masks. In the wrong hands, these relics could end the world as we know it. Who chose Alex and why?
+          Join Alex and her friends as she tries to unravel the mysteries surrounding her cursed inheritance. At the same time, Alex must contend with her complicated feelings for Gabriel Reyes, a distractingly attractive friend intent on keeping Alex alive and winning her heart. Can Alex trust him with the truth?
+          Fortunately, Alex's tough upbringing has prepared her to fight. Will she outlive the ancient vendetta that she inherited along with the golden treasure? And will Set, the ancient god of storms and disorder, allow Alex to survive his terrible retribution?
+          Mysterious, exhilarating, and utterly gripping, Nora Delzelle's entertaining fantasy, The Secrets of the Kings, takes readers through a twisted journey they will never want to end.",
+    author: "Nora Delzelle",
+    category: "Folklore & Mythology",
+    pages: 256,
+    image: "./images/thesecretsofthekings.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 12,
+    title: "Cry of the Firebird",
+    plot: "A firebird is reborn on the borders of Russia, a gate to a world of monsters and magic is breaking, and only a reluctant, untrained shaman stands in the way of a flood of supernatural darkness...
+          Anya is still reeling from the death of her grandfather when a strange encounter with the Finnish God of the Dead changes her life forever: Her family has been guarding the gates to the Russian otherworld on their farm for centuries, and she's the new gatekeeper. Worse, if she doesn't awaken her magical abilities and assume her new role, the gate will break, unleashing a flood of monsters and dark gods into their world.
+          As Anya struggles to make sense of her changing world, she can't deny the strange encounters. She'll need to accept her fate and work with the legendary firebird if she hopes to survive—and protect humanity.",
+    author: "Amy Kuivalainen",
+    category: "Folklore & Mythology",
+    pages: 316,
+    image: "./images/cryofthefirebird.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 13,
+    title: "Fluent in 3 Months: How Anyone at Any Age Can Learn to Speak Any Language from Anywhere in the World",
+    plot: "Benny Lewis, who speaks over ten languages—all self-taught—runs the largest language-learning blog in the world, Fluent In 3 Months. Lewis is a full-time "language hacker," someone who devotes all of his time to finding better, faster, and more efficient ways to learn languages. Fluent in 3 Months: How Anyone at Any Age Can Learn to Speak Any Language from Anywhere in the World is a new blueprint for fast language learning. Lewis argues that you don't need a great memory or "the language gene" to learn a language quickly, and debunks a number of long-held beliefs, such as adults not being as good of language learners as children.",
+    author: "Benny Lewis",
+    category: "Foreign Language Study Aids & Dictionaries",
+    pages: 256,
+    image: "./images/fluentin3months.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 14,
+    title: "Wheelock's Latin, 7th Edition",
+    plot: "Generations of students have learned Latin with this classic introductory textbook that remains the most highly regarded and bestselling single-volume of its kind.
+          Wheelock’s Latin 7th Edition retains its signature core of authentic Latin readings—curated from the works of Cicero, Vergil, and other major Roman authors of classical literature, drama, and poetry, as well as inscriptions, artifacts, and even authentic graffiti—that demonstrate the ancient Romans’ everyday use of Latin: Latin as a living language.
+          With expanded English-Latin/Latin-English vocabulary sections, tightly retooled comprehension and discussion questions, self-tutorial exercises, translation tips, etymological aids, maps, and dozens of photos and illustrations that capture aspects of classical culture and mythology, Wheelock’s Latin 7th Edition is the essential resource for students beginning their journey into the heart of the classical world.",
+    author: "Frederic M. Wheelock, Richard A. LaFleur",
+    category: "Foreign Language Study Aids & Dictionaries",
+    pages: 608,
+    image: "./images/wheellockslatin7e.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 15,
+    title: "Fluent Forever: How to Learn Any Language Fast and Never Forget It",
+    plot: "",
+    author: "",
+    category: "Foreign Language Study Aids & Dictionaries",
+    pages: 0,
+    image: "./images/.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 16,
+    title: "The Bonjour Effect: The Secret Codes of French Conversation Revealed",
+    plot: "Jean-Benoît Nadeau and Julie Barlow spent a decade traveling back and forth to Paris as well as living there. Yet one important lesson never seemed to sink in: how to communicate comfortably with the French, even when you speak their language. In The Bonjour Effect Jean-Benoît and Julie chronicle the lessons they learned after they returned to France to live, for a year, with their twin daughters. They offer up all the lessons they learned and explain, in a book as fizzy as a bottle of the finest French champagne, the most important aspect of all: the French don't communicate, they converse. To understand and speak French well, one must understand that French conversation runs on a set of rules that go to the heart of French culture. Why do the French like talking about "the decline of France"? Why does broaching a subject like money end all discussion? Why do the French become so aroused debating the merits and qualities of their own language? Through encounters with school principals, city hall civil servants, gas company employees, old friends and business acquaintances, Julie and Jean-Benoît explain why, culturally and historically, conversation with the French is not about communicating or being nice. It's about being interesting. After reading The Bonjour Effect, even readers with a modicum of French language ability will be able to hold their own the next time they step into a bistro on the Left Bank.",
+    author: "Julie Barlow, Jean-Benoit Nadeau",
+    category: "Foreign Language Study Aids & Dictionaries",
+    pages: 320,
+    image: "./images/thebonjoureffect.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 17,
+    title: "A Thousand Brains: A New Theory of Intelligence",
+    plot: "or all of neuroscience's advances, we've made little progress on its biggest question: How do simple cells in the brain create intelligence?
+          Jeff Hawkins and his team discovered that the brain uses maplike structures to build a model of the world-not just one model, but hundreds of thousands of models of everything we know. This discovery allows Hawkins to answer important questions about how we perceive the world, why we have a sense of self, and the origin of high-level thought.",
+    author: "Jeff Hawkins, Richard Dawkins",
+    category: "Computers",
+    pages: 288,
+    image: "./images/athousandbrains.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 18,
+    title: "Age of A.I.: And Our Human Future",
+    plot: "An AI learned to win chess by making moves human grand masters had never conceived. Another AI discovered a new antibiotic by analyzing molecular properties human scientists did not understand. Now, AI-powered jets are defeating experienced human pilots in simulated dogfights. AI is coming online in searching, streaming, medicine, education, and many other fields and, in so doing, transforming how humans are experiencing reality.
+          In The Age of AI, three leading thinkers have come together to consider how AI will change our relationships with knowledge, politics, and the societies in which we live. The Age of AI is an essential roadmap to our present and our future, an era unlike any that has come before.",
+    author: "Henry A Kissinger, Eric Schmidt, Daniel Huttenlocher",
+    category: "Computers",
+    pages: 272,
+    image: "./images/ageofai.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 19,
+    title: "Industry Influencer: Growing Your Brand Through Meaningful Connections and Engagement Online",
+    plot: "Dr. Glenn Vo delivers a unique twist on traditional business advice, empowering readers to find their “Triangle of Genius” as a way to connect with the nearly 4 billion people on social media. Consumers are buying products and making choices on Facebook, Instagram, LinkedIn and their equivalents in nanoseconds. Every 24 hours, a million more people join this tremendous force.
+          Industry Influencer is highly appealing to business owners and entrepreneurs who have found themselves struggling to catch up with the relentless pace of industry influence. They’ve spent countless dollars on hiring outside agencies. They’re looking for a foothold in this exciting, but rocky, new world. Now, Industry Influencer teaches them how to have more fun and make more money while sharing their passions with up to 4 billion people.",
+    author: "Glenn Vo",
+    category: "Computers",
+    pages: 178,
+    image: "./images/industryinfluencer.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 20,
+    title: "Cracking the Coding Interview: 189 Programming Questions and Solutions",
+    plot: "I am not a recruiter. I am a software engineer. And as such, I know what it's like to be asked to whip up brilliant algorithms on the spot and then write flawless code on a whiteboard. I've been through this as a candidate and as an interviewer.
+          Cracking the Coding Interview, 6th Edition is here to help you through this process, teaching you what you need to know and enabling you to perform at your very best. I've coached and interviewed hundreds of software engineers. The result is this book.
+          Learn how to uncover the hints and hidden details in a question, discover how to break down a problem into manageable chunks, develop techniques to unstick yourself when stuck, learn (or re-learn) core computer science concepts, and practice on 189 interview questions and solutions.
+          These interview questions are real; they are not pulled out of computer science textbooks. They reflect what's truly being asked at the top companies, so that you can be as prepared as possible.
+          WHAT'S INSIDE?
+          - 189 programming interview questions, ranging from the basics to the trickiest algorithm problems.
+          - A walk-through of how to derive each solution, so that you can learn how to get there yourself.
+          - Hints on how to solve each of the 189 questions, just like what you would get in a real interview.
+          - Five proven strategies to tackle algorithm questions, so that you can solve questions you haven't seen.
+          - Extensive coverage of essential topics, such as big O time, data structures, and core algorithms.
+          - A behind the scenes look at how top companies like Google and Facebook hire developers.
+          - Techniques to prepare for and ace the soft side of the interview: behavioral questions.
+          - For interviewers and companies: details on what makes a good interview question and hiring process.",
+    author: " Gayle Laakmann McDowell",
+    category: "Computers",
+    pages: 708,
+    image: "./images/crackingthecodinginterview.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 21,
+    title: "How to Do Nothing: Resisting the Attention Economy",
+    plot: "In a world where addictive technology is designed to buy and sell our attention, and our value is determined by our 24/7 data productivity, it can seem impossible to escape. But in this inspiring field guide to dropping out of the attention economy, artist and critic Jenny Odell shows us how we can still win back our lives.
+      Odell sees our attention as the most precious—and overdrawn—resource we have. And we must actively and continuously choose how we use it. We might not spend it on things that capitalism has deemed important … but once we can start paying a new kind of attention, she writes, we can undertake bolder forms of political action, reimagine humankind’s role in the environment, and arrive at more meaningful understandings of happiness and progress.
+      Far from the simple anti-technology screed, or the back-to-nature meditation we read so often, How to do Nothing is an action plan for thinking outside of capitalist narratives of efficiency and techno-determinism. Provocative, timely, and utterly persuasive, this book will change how you see your place in our world.
+",
+    author: "Jenny Odell",
+    category: "Computers",
+    pages: 256,
+    image: "./images/howtodonothing.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 22,
+    title: "The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma",
+    plot: "Trauma is a fact of life. Veterans and their families deal with the painful aftermath of combat; one in five Americans has been molested; one in four grew up with alcoholics; one in three couples have engaged in physical violence. Dr. Bessel van der Kolk, one of the world’s foremost experts on trauma, has spent over three decades working with survivors. In The Body Keeps the Score, he uses recent scientific advances to show how trauma literally reshapes both body and brain, compromising sufferers’ capacities for pleasure, engagement, self-control, and trust. He explores innovative treatments—from neurofeedback and meditation to sports, drama, and yoga—that offer new paths to recovery by activating the brain’s natural neuroplasticity. Based on Dr. van der Kolk’s own research and that of other leading specialists, The Body Keeps the Score exposes the tremendous power of our relationships both to hurt and to heal—and offers new hope for reclaiming lives.",
+    author: "Bessel van der Kolk M.D.",
+    category: "Psychology",
+    pages: 464,
+    image: "./images/thebodykeepsscore.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 23,
+    title: "Talking to Strangers: What We Should Know about the People We Don't Know",
+    plot: "How did Fidel Castro fool the CIA for a generation? Why did Neville Chamberlain think he could trust Adolf Hitler? Why are campus sexual assaults on the rise? Do television sitcoms teach us something about the way we relate to one another that isn’t true?
+        Talking to Strangers is a challenging and controversial excursion through history, psychology, and scandals taken straight from the news. In it, Malcolm Gladwell revisits the deceptions of Bernie Madoff, the suicide of Sylvia Plath, and the death of Sandra Bland—throwing our understanding of these and other stories into doubt.
+        Something is very wrong, Gladwell argues, with the tools and strategies we use to make sense of people we don’t know, and the resulting conflict and misunderstanding have a profound effect on our lives and our world. Now, with Talking to Strangers, Malcolm Gladwell brings us a gripping guidebook for troubled times.",
+    author: "Malcolm Gladwell",
+    category: "Psychology",
+    pages: 416,
+    image: "./images/talkingtostrangers.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 24,
+    title: "Attached: The New Science of Adult Attachment and How it Can Help You Find--and Keep--Love",
+    plot: "In this groundbreaking book, psychiatrist and neuroscientist Amir Levine and psychologist Rachel S. F. Heller reveal how an understanding of attachment theory-the most advanced relationship science in existence today-can help us find and sustain love. Attachment theory forms the basis for many bestselling books on the parent/child relationship, but there has yet to be an accessible guide to what this fascinating science has to tell us about adult romantic relationships-until now.
+          Attachment theory owes its inception to British psychologist and psychoanalyst John Bowlby, who in the 1950s examined the tremendous impact that our early relationships with our parents or caregivers has on the people we become. Also central to attachment theory is the discovery that our need to be in a close relationship with one or more individuals is embedded in our genes.",
+    author: "Amir Levine, Rachel Heller",
+    category: "Psychology",
+    pages: 304,
+    image: "./images/attached.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 25,
+    title: "It Didn't Start with You: How Inherited Family Trauma Shapes Who We Are and How to End the Cycle",
+    plot: "Depression. Anxiety. Chronic Pain. Phobias. Obsessive thoughts. The evidence is compelling: the roots of these difficulties may not reside in our immediate life experience or in chemical imbalances in our brains—but in the lives of our parents, grandparents, and even great-grandparents. The latest scientific research, now making headlines, supports what many have long intuited—that traumatic experience can be passed down through generations. It Didn’t Start with You builds on the work of leading experts in post-traumatic stress, including Mount Sinai School of Medicine neuroscientist Rachel Yehuda and psychiatrist Bessel van der Kolk, author of The Body Keeps the Score. Even if the person who suffered the original trauma has died, or the story has been forgotten or silenced, memory and feelings can live on. These emotional legacies are often hidden, encoded in everything from gene expression to everyday language, and they play a far greater role in our emotional and physical health than has ever before been understood.
+    As a pioneer in the field of inherited family trauma, Mark Wolynn has worked with individuals and groups on a therapeutic level for over twenty years. It Didn’t Start with You offers a pragmatic and prescriptive guide to his method, the Core Language Approach. Diagnostic self-inventories provide a way to uncover the fears and anxieties conveyed through everyday words, behaviors, and physical symptoms. Techniques for developing a genogram or extended family tree create a map of experiences going back through the generations. And visualization, active imagination, and direct dialogue create pathways to reconnection, integration, and reclaiming life and health. It Didn’t Start With You is a transformative approach to resolving longstanding difficulties that in many cases, traditional therapy, drugs, or other interventions have not had the capacity to touch.",
+    author: "Mark Wolynn",
+    category: "Psychology",
+    pages: 256,
+    image: "./images/itdidntstartwithyou.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 26,
+    title: "No Longer Human",
+    plot: "Plagued by a maddening anxiety, the terrible disconnect between his own concept of happiness and the joy of the rest of the world, Yozo Oba plays the clown in his dissolute life, holding up a mask for those around him as he spirals ever downward, locked arm-in-arm with death.
+          Osamu Dazai’s immortal—and supposedly autobiographical—work of Japanese literature, is perfectly adapted here into a manga by Junji Ito. The imagery wrenches open the text of the novel one line at a time to sublimate Yozo’s mental landscape into something even more delicate and grotesque. This is the ultimate in art by Ito, proof that nothing can surpass the terror of the human psyche.",
+    author: "Junji Ito",
+    category: "Horror",
+    pages: 616,
+    image: "./images/nolongerhuman.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 27,
+    title: "Mexican Gothic",
+    plot: "After receiving a frantic letter from her newly-wed cousin begging for someone to save her from a mysterious doom, Noemí Taboada heads to High Place, a distant house in the Mexican countryside. She’s not sure what she will find—her cousin’s husband, a handsome Englishman, is a stranger, and Noemí knows little about the region.
+         Noemí is also an unlikely rescuer: She’s a glamorous debutante, and her chic gowns and perfect red lipstick are more suited for cocktail parties than amateur sleuthing. But she’s also tough and smart, with an indomitable will, and she is not afraid: Not of her cousin’s new husband, who is both menacing and alluring; not of his father, the ancient patriarch who seems to be fascinated by Noemí; and not even of the house itself, which begins to invade Noemi’s dreams with visions of blood and doom.
+         Her only ally in this inhospitable abode is the family’s youngest son. Shy and gentle, he seems to want to help Noemí, but might also be hiding dark knowledge of his family’s past. For there are many secrets behind the walls of High Place. The family’s once colossal wealth and faded mining empire kept them from prying eyes, but as Noemí digs deeper she unearths stories of violence and madness.
+         And Noemí, mesmerized by the terrifying yet seductive world of High Place, may soon find it impossible to ever leave this enigmatic house behind.",
+    author: "Silvia Moreno-Garcia",
+    category: "Horror",
+    pages: 320,
+    image: "./images/mexicangothic.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 28,
+    title: "Cemetery Boys",
+    plot: "When his traditional Latinx family has problems accepting his true gender, Yadriel becomes determined to prove himself a real brujo. With the help of his cousin and best friend Maritza, he performs the ritual himself, and then sets out to find the ghost of his murdered cousin and set it free.
+          However, the ghost he summons is actually Julian Diaz, the school's resident bad boy, and Julian is not about to go quietly into death. He's determined to find out what happened and tie off some loose ends before he leaves. Left with no choice, Yadriel agrees to help Julian, so that they can both get what they want. But the longer Yadriel spends with Julian, the less he wants to let him leave.",
+    author: "Aiden Thomas",
+    category: "Horror",
+    pages: 352,
+    image: "./images/cemeteryboys.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 29,
+    title: "The Lovely Bones",
+    plot: "So begins the story of Susie Salmon, who is adjusting to her new home in heaven, a place that is not at all what she expected, even as she is watching life on earth continue without her — her friends trading rumors about her disappearance, her killer trying to cover his tracks, her grief-stricken family unraveling.",
+    author: "Alice Sebold",
+    category: "Horror",
+    pages: 368,
+    image: "./images/thelovelybones.jpeg",
+    checkedOut: false
+  },
+  {
+    id: 30,
+    title: "This Is Where It Ends",
+    plot: "Go inside a heartbreaking fictional school shooting, minute-by-terrifying-minute. Everyone has a reason to fear the boy with the gun...
+          10:00 a.m.: The principal of Opportunity, Alabama's high school finishes her speech, welcoming the entire student body to a new semester and encouraging them to excel and achieve.
+          10:02 a.m.: The students get up to leave the auditorium for their next class.
+          10:03 a.m.: The auditorium doors won't open.
+          10:05 a.m.: Someone starts shooting.
+          Over the course of 54 minutes, four students must confront their greatest hopes, and darkest fears, as they come face-to-face with the boy with the gun. In a world where violence in schools is at an all-time high and school shootings are a horrifyingly common reality for teenagers, This Is Where It Ends is a rallying cry to end the gun violence epidemic for good.",
+    author: "Marieke Nijkamp",
+    category: "Horror",
+    pages: 336,
+    image: "./images/thisiswhereitends.jpeg",
+    checkedOut: false
+  }
+]
