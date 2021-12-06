@@ -2,6 +2,10 @@
 
 Cozy Cat Cafe is a place where one can unwind, browse through books, and pet a kitty or two!
 
+![image](https://user-images.githubusercontent.com/46327683/144939291-afa1da53-6cf6-46ee-a7f3-49799ef0961b.png)
+
+## Core Deliverables
+
 -As a user, I should be able to see all of the books available in Cozy Cat Cafe.<br/>
 -As a user, I should be able to use a search bar to find the book I am looking for and have the results display in the book container.<br/>
 -As a user, I should be able to generate a new cat companion when I click a button.<br/>
