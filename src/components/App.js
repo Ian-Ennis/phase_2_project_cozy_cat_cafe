@@ -10,9 +10,11 @@ import Info from "./Info.js"
 import BookSpec from "./BookSpec";
 
 const catAPI = `https://cataas.com/cat?json=true`;
+const bookAPI ="http://localhost:3000/books";
 
 function App() {
   const [cat, setCat] = useState([]);
+  const [books, setBooks] = seState([]);
   const [bookCard, setBookCard] = useState(true);
 
   useEffect(() => {
@@ -32,6 +34,16 @@ function App() {
     console.log('adoptable')
   }
 
+  //BOOKS BELOW
+  useEffect(() => {
+    fetch(bookAPI)
+    .then(r => r.json())
+    .then(setBooks);
+  }, []);
+
+
+  //BOOKS ABOVE
+
 
   return (
     <div>
@@ -39,8 +51,8 @@ function App() {
       <Cat cat={cat} newRandomCat={newRandomCat} viewAdoptableCats={viewAdoptableCats}/>
       <Search />
       <Info />
-      <BookContainer />
-    </div>
+      <BookSpec />
+      <BookContainer books={books}/>
   );
 }
 

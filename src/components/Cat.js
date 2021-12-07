@@ -11,7 +11,8 @@ function Cat({ cat, newRandomCat, viewAdoptableCats }) {
           src={`${catURLStub}${cat.url}`}
           alt="cafe_cat"
         />
-        <button onClick={() => newRandomCat(cat)}>
+        <br/>
+        <button className="newCompanion" onClick={() => newRandomCat(cat)}>
           Want a new cat companion for the day?
         </button>
       </div>

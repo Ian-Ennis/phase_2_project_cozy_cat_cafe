@@ -1,3 +1,19 @@
+header {
+  text-align: right;
+  font-size: 30px;
+}
+
+.cafeCats {
+  margin-left: 0%;
+  margin-top: -2%;
+}
+
+.cafeCatImg {
+  max-width: 300px;
+  max-height: 300px;
+  /* border-radius: 200px; */
+}
+
 .bookCover {
   width: 100%;
   height: 100%;
@@ -17,9 +33,8 @@
   display: flex;
 }
 
-
-
 .bookInfo {
   margin-left: 0%;
   margin-right:0%
 }
+
