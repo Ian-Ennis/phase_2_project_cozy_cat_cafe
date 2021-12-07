@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Cat from "./Cat.js";
+import { useEffect } from "react";
+import { useState } from "react/cjs/react.development";
+import adoptableCats from "./catData.js";
+
+const catAPI = `https://cataas.com/cat?json=true`;
 
 function App() {
+  const [cat, setCat] = useState([]);
+
+  useEffect(() => {
+    fetch(catAPI)
+      .then((r) => r.json())
+      .then((data) => setCat(data));
+  }, []);
+
+  function newRandomCat(cat) {
+      fetch(catAPI)
+        .then((r) => r.json())
+        .then((data) => setCat(data));
+        console.log(cat.url)
+  }
+
+  function viewAdoptableCats() {
+    console.log('adoptable')
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Cat cat={cat} newRandomCat={newRandomCat} viewAdoptableCats={viewAdoptableCats}/>
     </div>
   );
 }
