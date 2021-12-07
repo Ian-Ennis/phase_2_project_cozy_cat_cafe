@@ -1,10 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import "../index.css";
+import { useEffect, useState } from "react";
+// import { useState } from "react/cjs/react.development";
+import { adoptableCats, bookData } from "../data.js";
+import Header from "./Header";
+import BookContainer from "./BookContainer.js";
+import BookCard from "./BookCard.js";
 import Cat from "./Cat.js";
-import { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
-import adoptableCats from "./catData.js";
+import Search from "./Search.js"
+import Info from "./Info.js"
 
 const catAPI = `https://cataas.com/cat?json=true`;
 
@@ -30,7 +34,11 @@ function App() {
 
   return (
     <div>
+      <Header />
       <Cat cat={cat} newRandomCat={newRandomCat} viewAdoptableCats={viewAdoptableCats}/>
+      <Search />
+      <Info />
+      <BookContainer />
     </div>
   );
 }

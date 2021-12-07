@@ -1,3 +1,7 @@
+const bookData = []
+  
+
+
 const adoptableCats = [
   {
     id: "1",
@@ -97,4 +101,4 @@ const adoptableCats = [
   },
 ];
 
-export default adoptableCats;
+export { adoptableCats, bookData };
