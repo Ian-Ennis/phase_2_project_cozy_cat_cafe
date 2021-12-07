@@ -1,7 +1,12 @@
 import React from "react";
+import BookCard from "./BookCard";
 
-function BookContainer() {
-    return <h2>BookContainer</h2>
-}
+function BookContainer({ books }) {
+    return (
+        <div id="bookContainer">
+            Book container
+        </div>
+    )
+};
 
 export default BookContainer;
