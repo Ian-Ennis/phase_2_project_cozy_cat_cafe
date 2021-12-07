@@ -2,7 +2,6 @@ import React from "react";
 import "../index.css";
 import { useEffect, useState } from "react";
 // import { useState } from "react/cjs/react.development";
-import { adoptableCats, bookData } from "../data.js";
 import Header from "./Header";
 import BookContainer from "./BookContainer.js";
 import BookCard from "./BookCard.js";
