@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.bookCover {
+  width: 100%;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.parentContainer {
+  position: relative;
+  background: #FFE;
+  padding: 1em 1em;
+}
+
+.twoColumnCenteredGrid {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+
+
+.bookInfo {
+  margin-left: 0%;
+  margin-right:0%
 }
