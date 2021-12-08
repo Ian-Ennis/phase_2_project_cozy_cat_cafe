@@ -14,7 +14,7 @@ const bookAPI ="http://localhost:3000/books";
 
 function App() {
   const [cat, setCat] = useState([]);
-  const [books, setBooks] = seState([]);
+  const [books, setBooks] = useState([]);
   const [bookCard, setBookCard] = useState(true);
 
   useEffect(() => {
@@ -45,6 +45,8 @@ function App() {
   //BOOKS ABOVE
 
 
+
+
   return (
     <div>
       <Header />
@@ -52,7 +54,8 @@ function App() {
       <Search />
       <Info />
       <BookSpec />
-      <BookContainer books={books}/>
+      <BookContainer books={books} />
+      </div>
   );
 }
 

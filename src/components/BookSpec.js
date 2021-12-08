@@ -8,7 +8,7 @@ function BookSpec({book, checkout}) {
                 <div class="row">
                     <div class="bookCoverContainer">
                         <img className="bookCover"></img>
-                            
+                        
                     </div>
                     <div class="bookInfo">
                         

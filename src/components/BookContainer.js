@@ -5,6 +5,9 @@ function BookContainer({ books }) {
     return (
         <div id="bookContainer">
             Book container
+            {books.map(b => (
+                <BookCard book={b}/>
+            ))}
         </div>
     )
 };
