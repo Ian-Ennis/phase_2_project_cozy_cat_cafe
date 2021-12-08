@@ -1,14 +1,12 @@
 import React from "react";
 
 function Cat({ cat, newRandomCat, viewAdoptableCats }) {
-  const catURLStub = `https://cataas.com`;
-
   return (
     <div>
       <div className="cafeCats">
         <img
           className="cafeCatImg"
-          src={`${catURLStub}${cat.url}`}
+          src={cat}
           alt="cafe_cat"
         />
         <br/>

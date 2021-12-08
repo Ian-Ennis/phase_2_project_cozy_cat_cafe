@@ -3,63 +3,74 @@ import "../index.css";
 import { useEffect, useState } from "react";
 import Header from "./Header";
 import BookContainer from "./BookContainer.js";
-import BookCard from "./BookCard.js";
 import Cat from "./Cat.js";
-import Search from "./Search.js"
-import Info from "./Info.js"
+import Search from "./Search.js";
+import Info from "./Info.js";
 import BookSpec from "./BookSpec";
 
-const catAPI = `https://cataas.com/cat?json=true`;
-const bookAPI ="http://localhost:3000/books";
+const catAPI = "http://localhost:3000/cafeCats";
+const bookAPI = "http://localhost:3000/books";
 
 function App() {
   const [cat, setCat] = useState([]);
   const [books, setBooks] = useState([]);
-  const [bookCard, setBookCard] = useState(true);
+  const [cardVisible, setCardVisible] = useState(true);
+  const [bookSpec, setBookSpec] = useState({});
+  const [clickedBook, setClickedBook] = useState({});
 
   useEffect(() => {
     fetch(catAPI)
       .then((r) => r.json())
-      .then((data) => setCat(data));
+      .then(setClickedBook);
   }, []);
 
-  function newRandomCat(cat) {
-      fetch(catAPI)
-        .then((r) => r.json())
-        .then((data) => setCat(data));
-        console.log(cat.url)
-  }
-
-  function viewAdoptableCats() {
-    console.log('adoptable')
-  }
-
-  //BOOKS BELOW
   useEffect(() => {
     fetch(bookAPI)
-    .then(r => r.json())
-    .then(setBooks);
+      .then((r) => r.json())
+      .then(setBooks)
+      .catch((error) => console.log("ERROR fetching bookAPI", error));
   }, []);
 
-
-  //BOOKS ABOVE
-
-  // take survey/see cats 
-  function viewAdoptableCats() {
-    console.log('adopt me!')
+  function newRandomCat() {
+    console.log('click')
+    fetch(catAPI)
+      .then((r) => r.json())
+      .then((data) => setCat(data[0].url));
   }
-  //
 
+  function viewAdoptableCats() {
+    console.log("adoptable");
+  }
+
+  function takeSurvey() {
+    console.log("adopt me!");
+  }
+
+  function showSpec(book) {
+    setClickedBook(book);
+    setCardVisible(false);
+  }
+
+  function backToBooks() {
+    setCardVisible(true)
+  }
 
   return (
     <div>
       <Header />
-      <Cat cat={cat} newRandomCat={newRandomCat} viewAdoptableCats={viewAdoptableCats}/>
+      <Cat
+        cat={cat}
+        newRandomCat={newRandomCat}
+        viewAdoptableCats={viewAdoptableCats}
+      />
       <Search />
-      <Info viewAdoptableCats={viewAdoptableCats}/>
-      <BookSpec />
-      <BookContainer books={books} />
-      </div>
+      <Info takeSurvey={takeSurvey} />
+      {cardVisible ? (
+        <BookContainer books={books} showSpec={showSpec} />
+      ) : (
+        <BookSpec clickedBook={clickedBook} backToBooks={backToBooks}/>
+      )}
+    </div>
   );
 }
 

@@ -1,6 +1,10 @@
 header {
   text-align: right;
-  font-size: 30px;
+  font-size: 40px;
+}
+
+.BookCard {
+  border-style: solid;
 }
 
 .cafeCats {
@@ -9,13 +13,28 @@ header {
 }
 
 .cafeCatImg {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 250px;
   /* border-radius: 200px; */
 }
 
 .info {
-  margin-right:59%
+  margin-right: 59%;
+  border: 5px solid #000000;
+  margin: 0px;
+  padding: 11px;
+  margin-right: 70%;
+}
+
+.companyInfo {
+  margin-top: 37%;
+}
+
+.surveyButton {
+  margin: 0;
+  position: relative;
+  top: 78%;
+  left: 6%;
 }
 
 .bookCover {

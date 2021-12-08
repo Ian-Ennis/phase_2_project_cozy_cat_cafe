@@ -1,12 +1,12 @@
 import React from "react";
 import BookCard from "./BookCard";
 
-function BookContainer({ books }) {
+function BookContainer({ books, showSpec }) {
     return (
-        <div id="bookContainer">
+        <div id="BookContainer">
             Book container
             {books.map(b => (
-                <BookCard book={b}/>
+                <BookCard key={b.id} book={b} showSpec={showSpec}/>
             ))}
         </div>
     )
