@@ -16,9 +16,6 @@ function Cat({ cat, newRandomCat, viewAdoptableCats }) {
           Want a new cat companion for the day?
         </button>
       </div>
-      <div className="adoptable">
-          <button onClick={() => viewAdoptableCats}>Click here to see adoptable cats!</button>
-      </div>
     </div>
   );
 }

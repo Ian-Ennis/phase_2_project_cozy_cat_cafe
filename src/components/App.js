@@ -44,7 +44,11 @@ function App() {
 
   //BOOKS ABOVE
 
-
+  // take survey/see cats 
+  function viewAdoptableCats() {
+    console.log('adopt me!')
+  }
+  //
 
 
   return (
@@ -52,7 +56,7 @@ function App() {
       <Header />
       <Cat cat={cat} newRandomCat={newRandomCat} viewAdoptableCats={viewAdoptableCats}/>
       <Search />
-      <Info />
+      <Info viewAdoptableCats={viewAdoptableCats}/>
       <BookSpec />
       <BookContainer books={books} />
       </div>
