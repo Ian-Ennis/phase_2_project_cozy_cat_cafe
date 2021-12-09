@@ -1,11 +1,11 @@
 import React from "react";
 import Cat from "./Cat.js";
 
-function RenderCat({ cats, nextCat, previousCat }) {
+function RenderCat({ cat, nextCat, previousCat, backIsOn, nextIsOn }) {
   return (
     <div>
-      {cats.map(cat => (
-        <Cat key={cat.id} cat={cat} nextCat={nextCat} previousCat={previousCat} />
+      {cat.map(cat => (
+        <Cat key={cat.id} cat={cat} nextCat={nextCat} previousCat={previousCat} backIsOn={backIsOn} nextIsOn={nextIsOn} />
       ))}
     </div>
   );

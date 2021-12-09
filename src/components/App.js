@@ -18,6 +18,8 @@ function App() {
   const [cats, setCats] = useState([]);
   const [oneCat, setOneCat] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [backIsOn, setBackIsOn] = useState(false);
+  const [nextIsOn, setNextIsOn] = useState(true);
   const [books, setBooks] = useState([]);
   const [cardVisible, setCardVisible] = useState(true);
   const [clickedBook, setClickedBook] = useState({});
@@ -40,19 +42,28 @@ function App() {
   }, []);
 
   function nextCat() {
-    if (currentIndex > 7) {
-      return;
+    if (currentIndex > 6) {
+      setNextIsOn(false);
+    }
+
+    if (currentIndex > 0) {
+      setBackIsOn(true);
     }
     setOneCat(cats.slice(currentIndex, currentIndex + 1));
     setCurrentIndex(currentIndex + 1);
   }
 
   function previousCat() {
-    if (currentIndex < 2) {
-      return;
+    if (currentIndex < 9) {
+      setNextIsOn(true)
     }
-    setOneCat(cats.slice(currentIndex -2, currentIndex -1))
-    setCurrentIndex(currentIndex -1);
+
+    if (currentIndex < 3) {
+      setBackIsOn(false);
+    }
+
+    setOneCat(cats.slice(currentIndex - 2, currentIndex - 1));
+    setCurrentIndex(currentIndex - 1);
   }
 
   function takeSurvey() {
@@ -69,16 +80,24 @@ function App() {
   }
 
   function handleSearch(e) {
-    setBooks(books.filter(b => b.title.toLowerCase().includes(e.target.value.toLowerCase())));
+    setBooks(
+      books.filter((b) =>
+        b.title.toLowerCase().includes(e.target.value.toLowerCase())
+      )
+    );
   }
 
   return (
     <div className="App">
       <Header />
       <RenderCat
-        cats={cats}
+        cat={oneCat}
+        nextCat={nextCat}
+        previousCat={previousCat}
+        backIsOn={backIsOn}
+        nextIsOn={nextIsOn}
       />
-      <Search handleSearch={handleSearch}/>
+      <Search handleSearch={handleSearch} />
       <Info takeSurvey={takeSurvey} />
       {cardVisible ? (
         <BookContainer books={books} showSpec={showSpec} />
