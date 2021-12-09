@@ -67,11 +67,19 @@ function App() {
     setCardVisible(true);
   }
 
+  function handleSearch(e) {
+    setBooks(books.filter(b => b.title.includes(e.target.value)));
+  }
+
   return (
-    <div>
+    <div className="App">
       <Header />
-      <RenderCat cats={oneCat} nextCat={nextCat} previousCat={previousCat} />
-      <Search />
+      <Cat
+        cat={cat}
+        newRandomCat={newRandomCat}
+        viewAdoptableCats={viewAdoptableCats}
+      />
+      <Search handleSearch={handleSearch}/>
       <Info takeSurvey={takeSurvey} />
       {cardVisible ? (
         <BookContainer books={books} showSpec={showSpec} />
