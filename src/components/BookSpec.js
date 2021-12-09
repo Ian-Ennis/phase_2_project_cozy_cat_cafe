@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useHistory, Link } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 
 function BookSpec({ checkout, clickedBook, backToBooks }) {
   const [book, setBook] = useState(null);
   const { id } = useParams();
-  const history = useHistory();
+  const history = useNavigate();
 
   function handleBack() {
     history.goBack();

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../index.css";
 import Header from "./Header";
-import Home from "./Home";
 import BookContainer from "./BookContainer.js";
 import RenderCat from "./RenderCat.js";
 import Cat from "./Cat";
@@ -11,7 +10,7 @@ import BookSpec from "./BookSpec";
 import { current } from "immer";
 
 // 'react-router-dom' Imports
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const catAPI = "http://localhost:3000/cafeCats";
 const bookAPI = "http://localhost:3000/books";
@@ -86,15 +85,19 @@ function App() {
       /> */}
 
       <Router>
-        <Route exact path="/books/:id" component={
-          () => <BookSpec checkout={checkout} clickedBook={clickedBook} backToBooks={backToBooks} />
-        }/>
-
-        <Route exact path="/books" component={
-          () => <BookContainer books={books} handleSearch={handleSearch} showSpec={showSpec} />
-        } />
-      
-        <Route exact path="/" component={Home} />
+        <Routes>
+          <Route exact path="/books/:id" component={
+            () => <BookSpec checkout={checkout} clickedBook={clickedBook} backToBooks={backToBooks} />
+          }/>
+        </Routes>
+        <Routes>
+          <Route exact path="/books" component={
+            () => <BookContainer books={books} handleSearch={handleSearch} showSpec={showSpec} />
+          } />
+        </Routes>
+        <Routes>
+          <Route exact path="/" component={Info} />
+        </Routes>
       </Router>
 
 
