@@ -18,6 +18,7 @@ const bookAPI = "http://localhost:3000/books";
 
 function App() {
   const [cats, setCats] = useState([]);
+  const [cafeCats, setCafeCats] = useState([]);
   const [oneCat, setOneCat] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [backIsOn, setBackIsOn] = useState(false);
@@ -31,8 +32,11 @@ function App() {
       .then((r) => r.json())
       .then((data) => {
         setCats(data);
-        setOneCat([...data.slice(0, 1)]);
-        setCurrentIndex(currentIndex + 1);
+        setCafeCats(data);
+        // console.log("CAT DATA", data.slice(0,1))
+        // let oneCat = data.slice(0,1);
+        // setOneCat(oneCat);
+        // setCurrentIndex(currentIndex + 1);
       });
   }, []);
 
@@ -105,7 +109,7 @@ function App() {
           } />
         </Routes>
         <Routes>
-          <Route exact path="/" element={<Info oneCat={oneCat} nextIsOn={nextIsOn} backIsOn={backIsOn} nextCat={nextCat} previousCat={previousCat}/>} />
+          <Route exact path="/" element={<Info cafeCats={cafeCats} nextIsOn={nextIsOn} backIsOn={backIsOn} nextCat={nextCat} previousCat={previousCat}/>} />
         </Routes>
       </Router>
 

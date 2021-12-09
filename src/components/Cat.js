@@ -1,8 +1,10 @@
 import React from "react";
 
 function Cat({cat, nextCat, previousCat, backIsOn, nextIsOn}) {
+  //nextIsOn = true
+  //backIsOn = false
   return (
-    <div>
+<div>
       <div className="cafeCats">
         <img className="cafeCatImg" src={cat.url} alt="cafe_cat" />
         <br />

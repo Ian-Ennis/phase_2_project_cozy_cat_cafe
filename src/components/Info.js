@@ -1,14 +1,14 @@
 import React from "react";
 import Cat from "./Cat";
 
-function Info(oneCat, nextCat, previousCat, backIsOn, nextIsOn) {
-  console.log("CAT in INFO", oneCat);
+function Info(cafeCats, nextCat, previousCat, backIsOn, nextIsOn) {
+  cafeCats.cafeCat[0];
   return (
     <>
-    <div className="info">
-      {/* {oneCat.map(c => (
+    <div className="cafeCats">
+      {cafeCats.cafeCats.map(c => (
         <Cat key={c.id} cat={c} nextCat={nextCat} previousCat={previousCat} backIsOn={backIsOn} nextIsOn={nextIsOn} />
-      ))} */}
+      ))}
     </div>
 
       
