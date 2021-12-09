@@ -40,11 +40,10 @@ div.BookCard img {
 
 .BookCard {
   border-style: solid;
-  border-color: lightblue;
-  background-color: rgb(243, 243, 255);
+  border-color: gray;
   height: auto;
   width: 250px;
-  /* flex-wrap: wrap; */
+  padding: 10px;
 }
 
 .cafeCats {
@@ -56,27 +55,18 @@ div.BookCard img {
 .cafeCatImg {
   max-width: 250px;
   max-height: 250px;
-  /* border-radius: 200px; */
 }
 
 .info {
-  /* margin-right: 59%; */
   border: 5px solid #000000;
   margin: 0px;
   padding: 11px;
-  /* margin-right: 70%; */
   grid-area: info;
-}
-
-.companyInfo {
-  /* margin-top: 37%; */
 }
 
 .surveyButton {
   margin: 0;
   position: relative;
-  /* top: 78%;
-  left: 6%; */
 }
 
 .bookCover {
