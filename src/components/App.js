@@ -7,6 +7,7 @@ import Cat from "./Cat";
 import Search from "./Search.js";
 import Info from "./Info.js";
 import BookSpec from "./BookSpec";
+import AdoptableCats from "./AdoptableCats";
 import { current } from "immer";
 
 // 'react-router-dom' Imports

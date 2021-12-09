@@ -1,5 +1,6 @@
 * {
   font-family: 'Montserrat', sans-serif;
+  background-color: lavender;
 }
 
 a {
@@ -15,7 +16,6 @@ a {
     "info bookContainer"
     "companyInfo bookContainer";
   grid-template-columns: 20% 80%;
-  background-color: lavender;
 }
 
 header {
@@ -29,20 +29,22 @@ div.BookContainer {
   border-color: green;
   padding: 10px;
   grid-area: bookContainer;
-  display: inline-block;
+  height: auto;
+  flex-wrap: wrap;
+  display: inline-flex;
 }
 
 div.BookCard img {
   height: 300px;
-  display: inline-grid;
-  align-content: center;
 }
 
 .BookCard {
   border-style: solid;
   border-color: lightblue;
+  background-color: rgb(243, 243, 255);
   height: auto;
   width: 250px;
+  /* flex-wrap: wrap; */
 }
 
 .cafeCats {
