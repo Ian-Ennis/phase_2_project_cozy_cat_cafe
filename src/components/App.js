@@ -56,7 +56,7 @@ function App() {
   }
 
   function handleSearch(e) {
-    setBooks(books.filter(b => b.title.includes(e.target.value)));
+    setBooks(books.filter(b => b.title.toLowerCase().includes(e.target.value.toLowerCase())));
   }
 
   return (
