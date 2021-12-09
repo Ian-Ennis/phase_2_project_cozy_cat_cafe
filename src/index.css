@@ -1,15 +1,46 @@
+.App {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "cat bookContainer"
+    "search bookContainer"
+    "info bookContainer"
+    "companyInfo bookContainer";
+  grid-template-columns: 20% 80%;
+  background-color: lavender;
+}
+
 header {
   text-align: right;
   font-size: 40px;
+  grid-area: header;
+}
+
+div.BookContainer {
+  border-style: solid;
+  border-color: green;
+  padding: 10px;
+  grid-area: bookContainer;
+  display: inline-block;
+}
+
+div.BookCard img {
+  height: 300px;
+  display: inline-grid;
+  align-content: center;
 }
 
 .BookCard {
   border-style: solid;
+  border-color: lightblue;
+  height: auto;
+  width: 250px;
 }
 
 .cafeCats {
   margin-left: 0%;
   margin-top: -2%;
+  grid-area: cat
 }
 
 .cafeCatImg {
@@ -19,22 +50,23 @@ header {
 }
 
 .info {
-  margin-right: 59%;
+  /* margin-right: 59%; */
   border: 5px solid #000000;
   margin: 0px;
   padding: 11px;
-  margin-right: 70%;
+  /* margin-right: 70%; */
+  grid-area: info;
 }
 
 .companyInfo {
-  margin-top: 37%;
+  /* margin-top: 37%; */
 }
 
 .surveyButton {
   margin: 0;
   position: relative;
-  top: 78%;
-  left: 6%;
+  /* top: 78%;
+  left: 6%; */
 }
 
 .bookCover {

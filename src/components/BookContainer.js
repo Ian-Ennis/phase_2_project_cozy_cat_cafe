@@ -3,8 +3,7 @@ import BookCard from "./BookCard";
 
 function BookContainer({ books, showSpec }) {
     return (
-        <div id="BookContainer">
-            Book container
+        <div className="BookContainer">
             {books.map(b => (
                 <BookCard key={b.id} book={b} showSpec={showSpec}/>
             ))}
