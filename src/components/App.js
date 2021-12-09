@@ -56,8 +56,6 @@ function App() {
   }
 
   function handleSearch(e) {
-    console.log("handleSearch has been invoked!", e.target.value);
-    // setPlants(plants.filter(p => p.name.includes(e.target.value)))
     setBooks(books.filter(b => b.title.includes(e.target.value)));
   }
 
