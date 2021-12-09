@@ -75,8 +75,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Cat
-        cat={oneCat}
+      <RenderCat
+        cats={cats}
       />
       <Search handleSearch={handleSearch}/>
       <Info takeSurvey={takeSurvey} />
