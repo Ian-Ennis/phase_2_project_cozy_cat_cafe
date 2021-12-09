@@ -5,8 +5,7 @@ function Info({takeSurvey}) {
     <div className="info">
       <h2 className="adoptionHeader">Adoption Services</h2>
       <p className={"adoptionParagraph"}>
-        Looking for a fuzzy new addition to your home? Answer a few questions to see
-        if we have a cat that's right for you!
+        Looking for a fuzzy new addition to your home?
       </p>
       <button className="surveyButton" onClick={() => takeSurvey()}>Match with a cat!</button>
       <div className="companyInfo">
