@@ -1,6 +1,11 @@
 * {
   font-family: 'Montserrat', sans-serif;
 }
+
+a {
+  padding: 10px;
+}
+
 .App {
   display: grid;
   grid-template-areas: 

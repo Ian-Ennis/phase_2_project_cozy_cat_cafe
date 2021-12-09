@@ -86,17 +86,17 @@ function App() {
 
       <Router>
         <Routes>
-          <Route exact path="/books/:id" component={
-            () => <BookSpec checkout={checkout} clickedBook={clickedBook} backToBooks={backToBooks} />
+          <Route exact path="/books/:id" element={
+            <BookSpec checkout={checkout} clickedBook={clickedBook} backToBooks={backToBooks} />
           }/>
         </Routes>
         <Routes>
-          <Route exact path="/books" component={
-            () => <BookContainer books={books} handleSearch={handleSearch} showSpec={showSpec} />
+          <Route exact path="/books" element={
+            <BookContainer books={books} handleSearch={handleSearch} showSpec={showSpec} />
           } />
         </Routes>
         <Routes>
-          <Route exact path="/" component={Info} />
+          <Route exact path="/" element={<Info />} />
         </Routes>
       </Router>
 
