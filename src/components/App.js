@@ -91,6 +91,11 @@ function App() {
           }/>
         </Routes>
         <Routes>
+          <Route exact path="/adoptablecats" element={
+            <AdoptableCats />
+          } />
+        </Routes>
+        <Routes>
           <Route exact path="/books" element={
             <BookContainer books={books} handleSearch={handleSearch} showSpec={showSpec} />
           } />

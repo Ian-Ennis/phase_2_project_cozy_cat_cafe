@@ -2,6 +2,10 @@ import React from "react";
 
 function Info() {
   return (
+    <>
+    <div className="cafeCats">
+      {/* Ian displays cafe cats here */}
+    </div>
     <div className="info">
       <h2 className="adoptionHeader">Adoption Services</h2>
       <p className={"adoptionParagraph"}>
@@ -18,6 +22,7 @@ function Info() {
       <p>CozyCatCafe@gmail.com</p>
       </div>
     </div>
+    </>
   );
 };
 

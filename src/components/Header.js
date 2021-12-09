@@ -7,7 +7,7 @@ function Header() {
       <nav>
         <a href="/">Home</a>
         <a href="/books">Books</a>
-        <a href="">Adoptable Cats</a>
+        <a href="/adoptablecats">Adoptable Cats</a>
       </nav>
     </header>
   );
