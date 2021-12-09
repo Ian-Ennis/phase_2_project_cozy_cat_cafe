@@ -7,9 +7,9 @@ function Cat({cat, nextCat, previousCat}) {
         <img className="cafeCatImg" src={cat.url} alt="cafe_cat" />
         <br />
         <button className="newCompanion" onClick={() => nextCat(cat)}>
-          Click me for a new cat!
+          Next cat
         </button>
-        <button className="oldCompanion" onClick={() => previousCat(cat)}>Click here to see previous kitties!</button>
+        <button className="oldCompanion" onClick={() => previousCat(cat)}>Previous cat</button>
       </div>
     </div>
   );
