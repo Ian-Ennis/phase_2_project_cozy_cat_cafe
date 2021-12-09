@@ -55,6 +55,12 @@ function App() {
     setCardVisible(true)
   }
 
+  function handleSearch(e) {
+    console.log("handleSearch has been invoked!", e.target.value);
+    // setPlants(plants.filter(p => p.name.includes(e.target.value)))
+    setBooks(books.filter(b => b.title.includes(e.target.value)));
+  }
+
   return (
     <div className="App">
       <Header />
@@ -63,7 +69,7 @@ function App() {
         newRandomCat={newRandomCat}
         viewAdoptableCats={viewAdoptableCats}
       />
-      <Search />
+      <Search handleSearch={handleSearch}/>
       <Info takeSurvey={takeSurvey} />
       {cardVisible ? (
         <BookContainer books={books} showSpec={showSpec} />
