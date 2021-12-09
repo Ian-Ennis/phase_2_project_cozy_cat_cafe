@@ -8,6 +8,7 @@ import Search from "./Search.js";
 import Info from "./Info.js";
 import BookSpec from "./BookSpec";
 import { current } from "immer";
+import Cat from "./Cat";
 
 const catAPI = "http://localhost:3000/cafeCats";
 
@@ -75,9 +76,7 @@ function App() {
     <div className="App">
       <Header />
       <Cat
-        cat={cat}
-        newRandomCat={newRandomCat}
-        viewAdoptableCats={viewAdoptableCats}
+        cat={oneCat}
       />
       <Search handleSearch={handleSearch}/>
       <Info takeSurvey={takeSurvey} />
