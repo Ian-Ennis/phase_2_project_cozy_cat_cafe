@@ -5,17 +5,17 @@ function Info(oneCat, nextCat, previousCat, backIsOn, nextIsOn) {
   console.log("CAT in INFO", oneCat);
   return (
     <>
-    <div>
-      {oneCat.map(c => (
+    <div className="info">
+      {/* {oneCat.map(c => (
         <Cat key={c.id} cat={c} nextCat={nextCat} previousCat={previousCat} backIsOn={backIsOn} nextIsOn={nextIsOn} />
-      ))}
+      ))} */}
     </div>
 
       
       <div className="info">
         <h2 className="adoptionHeader">Adoption Services</h2>
         <p className={"adoptionParagraph"}>
-          Looking for a fuzzy new addition to your home?
+          Looking for a fuzzy new addition to your home? See the Adoptable Cats page.
         </p>
         <div className="companyInfo">
         <p>Why don't cats play poker in the jungle? There's too many cheetahs!</p>

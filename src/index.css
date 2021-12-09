@@ -15,7 +15,16 @@ a {
     "search bookContainer"
     "info bookContainer"
     "companyInfo bookContainer";
-  grid-template-columns: 20% 80%;
+  /* grid-template-columns: 20% 80%; */
+}
+
+.info {
+  padding: 20px;
+  width: 100%;
+}
+
+.searchBar {
+  padding: 10px;
 }
 
 header {
