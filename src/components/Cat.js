@@ -24,4 +24,3 @@ function Cat({cat, nextCat, previousCat, backIsOn, nextIsOn}) {
 }
 
 export default Cat;
-

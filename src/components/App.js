@@ -13,11 +13,13 @@ import { current } from "immer";
 // 'react-router-dom' Imports
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const catAPI = "http://localhost:3000/cafeCats";
+const adoptableCatsAPI = "http://localhost:3000/adoptableCats";
+const cafeCatsAPI = "http://localhost:3000/cafeCats";
 const bookAPI = "http://localhost:3000/books";
 
 function App() {
   const [cats, setCats] = useState([]);
+  const [adoptableCats, setAdoptableCats] = useState([]);
   const [cafeCats, setCafeCats] = useState([]);
   const [oneCat, setOneCat] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,7 +30,12 @@ function App() {
   const [clickedBook, setClickedBook] = useState({});
 
   useEffect(() => {
-    fetch(catAPI)
+    fetch(adoptableCatsAPI)
+    .then(r => r.json())
+    .then(setAdoptableCats)
+  }, []);
+  useEffect(() => {
+    fetch(cafeCatsAPI)
       .then((r) => r.json())
       .then((data) => {
         setCats(data);
@@ -100,7 +107,7 @@ function App() {
         </Routes>
         <Routes>
           <Route exact path="/adoptablecats" element={
-            <AdoptableCats />
+            <AdoptableCats adoptableCats={adoptableCats}/>
           } />
         </Routes>
         <Routes>

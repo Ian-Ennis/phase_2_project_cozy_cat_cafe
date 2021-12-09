@@ -2,7 +2,7 @@ import React from "react";
 import Cat from "./Cat";
 
 function Info(cafeCats, nextCat, previousCat, backIsOn, nextIsOn) {
-  cafeCats.cafeCat[0];
+  // cafeCats.cafeCat[0];
   return (
     <>
     <div className="cafeCats">

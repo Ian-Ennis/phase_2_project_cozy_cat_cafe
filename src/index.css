@@ -7,6 +7,14 @@ a {
   padding: 10px;
 }
 
+nav {
+  padding: 10px;
+}
+
+a:hover {
+  background-color: rgb(240, 200, 206);
+}
+
 .App {
   /* display: grid; */
   /* grid-template-areas: 
