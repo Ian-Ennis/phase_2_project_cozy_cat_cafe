@@ -1,7 +1,6 @@
 import React from "react";
 
 function BookSpec({ book, checkout, clickedBook, backToBooks }) {
-  console.log(clickedBook);
   return (
     <div className="parentContainer">
       <div className="twoColumnCenteredGrid">
@@ -16,7 +15,7 @@ function BookSpec({ book, checkout, clickedBook, backToBooks }) {
           </div>
           <div className="bookInfo">
             <button onClick={() => checkout(book)}>Check out</button>
-            <button></button>
+            <button onClick={() => backToBooks()}>Back</button>
           </div>
           <div className="plot"></div>
         </div>

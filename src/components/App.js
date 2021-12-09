@@ -3,25 +3,32 @@ import "../index.css";
 import { useEffect, useState } from "react";
 import Header from "./Header";
 import BookContainer from "./BookContainer.js";
-import Cat from "./Cat.js";
+import RenderCat from "./RenderCat.js";
 import Search from "./Search.js";
 import Info from "./Info.js";
 import BookSpec from "./BookSpec";
+import { current } from "immer";
 
 const catAPI = "http://localhost:3000/cafeCats";
+
 const bookAPI = "http://localhost:3000/books";
 
 function App() {
-  const [cat, setCat] = useState([]);
+  const [cats, setCats] = useState([]);
+  const [oneCat, setOneCat] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [books, setBooks] = useState([]);
   const [cardVisible, setCardVisible] = useState(true);
-  const [bookSpec, setBookSpec] = useState({});
   const [clickedBook, setClickedBook] = useState({});
 
   useEffect(() => {
     fetch(catAPI)
       .then((r) => r.json())
-      .then(setClickedBook);
+      .then((data) => {
+        setCats(data);
+        setOneCat([...data.slice(0, 1)]);
+        setCurrentIndex(currentIndex + 1);
+      });
   }, []);
 
   useEffect(() => {
@@ -31,15 +38,20 @@ function App() {
       .catch((error) => console.log("ERROR fetching bookAPI", error));
   }, []);
 
-  function newRandomCat() {
-    console.log('click')
-    fetch(catAPI)
-      .then((r) => r.json())
-      .then((data) => setCat(data[0].url));
+  function nextCat() {
+    if (currentIndex > 7) {
+      return;
+    }
+    setOneCat(cats.slice(currentIndex, currentIndex + 1));
+    setCurrentIndex(currentIndex + 1);
   }
 
-  function viewAdoptableCats() {
-    console.log("adoptable");
+  function previousCat() {
+    if (currentIndex < 2) {
+      return;
+    }
+    setOneCat(cats.slice(currentIndex -2, currentIndex -1))
+    setCurrentIndex(currentIndex -1);
   }
 
   function takeSurvey() {
@@ -52,7 +64,7 @@ function App() {
   }
 
   function backToBooks() {
-    setCardVisible(true)
+    setCardVisible(true);
   }
 
   function handleSearch(e) {
@@ -72,7 +84,7 @@ function App() {
       {cardVisible ? (
         <BookContainer books={books} showSpec={showSpec} />
       ) : (
-        <BookSpec clickedBook={clickedBook} backToBooks={backToBooks}/>
+        <BookSpec clickedBook={clickedBook} backToBooks={backToBooks} />
       )}
     </div>
   );
