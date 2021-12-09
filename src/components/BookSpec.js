@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams, useHistory, Link } from 'react-router-dom';
 
-function BookSpec({ book, checkout, clickedBook, backToBooks }) {
+function BookSpec({ checkout, clickedBook, backToBooks }) {
+  const [book, setBook] = useState(null);
+  const { id } = useParams();
+  const history = useHistory();
+
+  function handleBack() {
+    history.goBack();
+  }
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/books/${id}`)
+      .then((r) => r.json())
+      .then((book) => {
+        setBook(book);
+      });
+  }, [id]);
+
   return (
     <div className="parentContainer">
+      <Link onClick={handleBack}>
+            Go Back
+      </Link>
       <div className="twoColumnCenteredGrid">
         <div className="row">
           <div className="bookCoverContainer">
@@ -17,7 +37,6 @@ function BookSpec({ book, checkout, clickedBook, backToBooks }) {
             <button onClick={() => checkout(book)}>Check out</button>
             <button onClick={() => backToBooks()}>Back</button>
           </div>
-          <div className="plot"></div>
         </div>
       </div>
     </div>

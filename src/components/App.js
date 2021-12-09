@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../index.css";
-import { useEffect, useState } from "react";
 import Header from "./Header";
+import Home from "./Home";
 import BookContainer from "./BookContainer.js";
 import RenderCat from "./RenderCat.js";
 import Cat from "./Cat";
@@ -10,8 +10,10 @@ import Info from "./Info.js";
 import BookSpec from "./BookSpec";
 import { current } from "immer";
 
-const catAPI = "http://localhost:3000/cafeCats";
+// 'react-router-dom' Imports
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+const catAPI = "http://localhost:3000/cafeCats";
 const bookAPI = "http://localhost:3000/books";
 
 function App() {
@@ -72,19 +74,40 @@ function App() {
     setBooks(books.filter(b => b.title.toLowerCase().includes(e.target.value.toLowerCase())));
   }
 
+  function checkout() {
+    console.log("POST request here")
+  }
+
   return (
     <div className="App">
       <Header />
-      <RenderCat
-        cats={cats}
-      />
-      <Search handleSearch={handleSearch}/>
-      <Info takeSurvey={takeSurvey} />
+      {/* <RenderCat
+        cat={oneCat}
+      /> */}
+
+      <Router>
+        <Route exact path="/books/:id" component={
+          () => <BookSpec checkout={checkout} clickedBook={clickedBook} backToBooks={backToBooks} />
+        }/>
+
+        <Route exact path="/books" component={
+          () => <BookContainer books={books} handleSearch={handleSearch} showSpec={showSpec} />
+        } />
+      
+        <Route exact path="/" component={Home} />
+      </Router>
+
+
+
+
+
+
+      {/* <Info takeSurvey={takeSurvey} />
       {cardVisible ? (
         <BookContainer books={books} showSpec={showSpec} />
       ) : (
         <BookSpec clickedBook={clickedBook} backToBooks={backToBooks} />
-      )}
+      )} */}
     </div>
   );
 }
