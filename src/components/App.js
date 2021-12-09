@@ -20,6 +20,8 @@ function App() {
   const [cats, setCats] = useState([]);
   const [oneCat, setOneCat] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [backIsOn, setBackIsOn] = useState(false);
+  const [nextIsOn, setNextIsOn] = useState(true);
   const [books, setBooks] = useState([]);
   const [cardVisible, setCardVisible] = useState(true);
   const [clickedBook, setClickedBook] = useState({});
@@ -42,23 +44,28 @@ function App() {
   }, []);
 
   function nextCat() {
-    if (currentIndex > 7) {
-      return;
+    if (currentIndex > 6) {
+      setNextIsOn(false);
+    }
+
+    if (currentIndex > 0) {
+      setBackIsOn(true);
     }
     setOneCat(cats.slice(currentIndex, currentIndex + 1));
     setCurrentIndex(currentIndex + 1);
   }
 
   function previousCat() {
-    if (currentIndex < 2) {
-      return;
+    if (currentIndex < 9) {
+      setNextIsOn(true)
     }
-    setOneCat(cats.slice(currentIndex -2, currentIndex -1))
-    setCurrentIndex(currentIndex -1);
-  }
 
-  function takeSurvey() {
-    console.log("adopt me!");
+    if (currentIndex < 3) {
+      setBackIsOn(false);
+    }
+
+    setOneCat(cats.slice(currentIndex - 2, currentIndex - 1));
+    setCurrentIndex(currentIndex - 1);
   }
 
   function showSpec(book) {
@@ -81,10 +88,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* <RenderCat
-        cat={oneCat}
-      /> */}
-
       <Router>
         <Routes>
           <Route exact path="/books/:id" element={
@@ -102,17 +105,11 @@ function App() {
           } />
         </Routes>
         <Routes>
-          <Route exact path="/" element={<Info />} />
+          <Route exact path="/" element={<Info oneCat={oneCat} nextIsOn={nextIsOn} backIsOn={backIsOn} nextCat={nextCat} previousCat={previousCat}/>} />
         </Routes>
       </Router>
 
-
-
-
-
-
-      {/* <Info takeSurvey={takeSurvey} />
-      {cardVisible ? (
+    {/*{cardVisible ? (
         <BookContainer books={books} showSpec={showSpec} />
       ) : (
         <BookSpec clickedBook={clickedBook} backToBooks={backToBooks} />

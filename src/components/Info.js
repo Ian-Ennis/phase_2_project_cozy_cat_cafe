@@ -1,22 +1,14 @@
 import React from "react";
+import Cat from "./Cat";
 
-function Info(oneCat, nextIsOn, backIsOn, nextCat, previousCat) {
+function Info(cat, nextCat, previousCat, backIsOn, nextIsOn) {
   return (
     <>
-      <div className="cafeCats">
-          <img className="cafeCatImg" src={oneCat.url} alt="cafe_cat" />
-          <br />
-          {backIsOn ? (
-            <button className="oldCompanion" onClick={() => previousCat(oneCat)}>
-              Previous cat
-            </button>
-          ) : null}
-          {nextIsOn ? (
-            <button className="newCompanion" onClick={() => nextCat(oneCat)}>
-              Next cat
-            </button>
-          ) : null}
-      </div>
+    <div>
+      {cat.map(cat => (
+        <Cat key={cat.id} cat={cat} nextCat={nextCat} previousCat={previousCat} backIsOn={backIsOn} nextIsOn={nextIsOn} />
+      ))}
+    </div>
 
       
       <div className="info">
@@ -24,7 +16,6 @@ function Info(oneCat, nextIsOn, backIsOn, nextCat, previousCat) {
         <p className={"adoptionParagraph"}>
           Looking for a fuzzy new addition to your home?
         </p>
-        <button className="surveyButton">Match with a cat!</button>
         <div className="companyInfo">
         <p>Why don't cats play poker in the jungle? There's too many cheetahs!</p>
         <h2>Company Info</h2>
