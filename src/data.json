@@ -371,35 +371,35 @@
     },
     {
       "id": "2",
-      "url": "https://cataas.com/cat/61009bf7caacc400184f6aea",
-      "name": "Blue",
-      "gender": "female",
-      "age": "kitten"
-    },
-    {
-      "id": "3",
-      "url": "https://cataas.com/cat/5a2117b22d0232008a63ef7e",
-      "name": "Goose",
-      "gender": "female",
+      "url": "https://cdn2.thecatapi.com/images/EhxLjd1_x.jpg",
+      "name": "Bernard",
+      "gender": "male",
       "age": "adult"
     },
     {
-      "id": "4",
-      "url": "https://cataas.com/cat/6136be59ebad510011b54b88",
-      "name": "Pepper",
-      "gender": "female",
-      "age": "kitten"
-    },
-    {
-      "id": "5",
+      "id": "3",
       "url": "https://cataas.com/cat/610444fae10e000012021118",
       "name": "Nova",
       "gender": "female",
       "age": "kitten"
     },
     {
+      "id": "4",
+      "url": "https://cataas.com/cat/61009bf7caacc400184f6aea",
+      "name": "Blue",
+      "gender": "female",
+      "age": "kitten"
+    },
+    {
+      "id": "5",
+      "url": "https://cataas.com/cat/5a2117b22d0232008a63ef7e",
+      "name": "Goose",
+      "gender": "female",
+      "age": "adult"
+    },
+    {
       "id": "6",
-      "url": "https://cataas.com/cat/5f22a49f5bc3fa00104444a5",
+      "url": "https://cdn2.thecatapi.com/images/e0sS4bZcP.jpg",
       "name": "Mimi",
       "gender": "female",
       "age": "adult"
@@ -413,7 +413,7 @@
     },
     {
       "id": "8",
-      "url": "https://cataas.com/cat/5afde31243314d000f6f457f",
+      "url": "https://cdn2.thecatapi.com/images/2vu.jpg",
       "name": "Belle",
       "gender": "female",
       "age": "adult"
