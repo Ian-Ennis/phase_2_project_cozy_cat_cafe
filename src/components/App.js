@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Header from "./Header";
 import BookContainer from "./BookContainer.js";
 import RenderCat from "./RenderCat.js";
+import Cat from "./Cat";
 import Search from "./Search.js";
 import Info from "./Info.js";
 import BookSpec from "./BookSpec";
