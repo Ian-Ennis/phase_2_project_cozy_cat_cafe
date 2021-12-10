@@ -1,6 +1,6 @@
 import React from "react";
 
-function Cat({cat, nextCat, previousCat, backIsOn, nextIsOn}) {
+function Cat({cat}) {
   //nextIsOn = true
   //backIsOn = false
   return (

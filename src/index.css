@@ -21,6 +21,19 @@ div.adoptableCats {
   flex-wrap: wrap;
   display: inline-flex;
 }
+
+.cat-adoption-form {
+  border-style: solid;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.cat-adoption-form input {
+  /* margin-right: 2rem;
+  flex: 1; */
+  padding: 10px;
+  margin: 10px;
+}
 div.cafeCats {
   padding: 10px;
   height: auto;

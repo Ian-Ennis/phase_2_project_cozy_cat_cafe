@@ -54,30 +54,6 @@ function App() {
       .catch((error) => console.log("ERROR fetching bookAPI", error));
   }, []);
 
-  function nextCat() {
-    if (currentIndex > 6) {
-      setNextIsOn(false);
-    }
-
-    if (currentIndex > 0) {
-      setBackIsOn(true);
-    }
-    setOneCat(cats.slice(currentIndex, currentIndex + 1));
-    setCurrentIndex(currentIndex + 1);
-  }
-
-  function previousCat() {
-    if (currentIndex < 9) {
-      setNextIsOn(true)
-    }
-
-    if (currentIndex < 3) {
-      setBackIsOn(false);
-    }
-
-    setOneCat(cats.slice(currentIndex - 2, currentIndex - 1));
-    setCurrentIndex(currentIndex - 1);
-  }
 
   function showSpec(book) {
     setClickedBook(book);
@@ -116,7 +92,7 @@ function App() {
           } />
         </Routes>
         <Routes>
-          <Route exact path="/" element={<Info cafeCats={cafeCats} nextIsOn={nextIsOn} backIsOn={backIsOn} nextCat={nextCat} previousCat={previousCat}/>} />
+          <Route exact path="/" element={<Info cafeCats={cafeCats}/>} />
         </Routes>
       </Router>
 
