@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../index.css";
 import Header from "./Header";
 import BookContainer from "./BookContainer.js";
-import RenderCat from "./RenderCat.js";
 import Cat from "./Cat";
 import Search from "./Search.js";
 import Info from "./Info.js";
@@ -27,7 +26,6 @@ function App() {
   const [nextIsOn, setNextIsOn] = useState(true);
   const [books, setBooks] = useState([]);
   const [cardVisible, setCardVisible] = useState(true);
-  const [clickedBook, setClickedBook] = useState({});
 
   useEffect(() => {
     fetch(adoptableCatsAPI)
@@ -40,10 +38,6 @@ function App() {
       .then((data) => {
         setCats(data);
         setCafeCats(data);
-        // console.log("CAT DATA", data.slice(0,1))
-        // let oneCat = data.slice(0,1);
-        // setOneCat(oneCat);
-        // setCurrentIndex(currentIndex + 1);
       });
   }, []);
 
@@ -53,47 +47,6 @@ function App() {
       .then(setBooks)
       .catch((error) => console.log("ERROR fetching bookAPI", error));
   }, []);
-
-<<<<<<< HEAD
-=======
-  function nextCat() {
-    if (currentIndex > 6) {
-      setNextIsOn(false);
-    }
-
-    if (currentIndex > 0) {
-      setBackIsOn(true);
-    }
-    setOneCat(cats.slice(currentIndex, currentIndex + 1));
-    setCurrentIndex(currentIndex + 1);
-  }
-
-  function previousCat() {
-    if (currentIndex < 9) {
-      setNextIsOn(true)
-    }
-
-    if (currentIndex < 3) {
-      setBackIsOn(false);
-    }
-
-    setOneCat(cats.slice(currentIndex - 2, currentIndex - 1));
-    setCurrentIndex(currentIndex - 1);
-  }
-
-  function takeSurvey() {
-    console.log("adopt me!");
-  }
->>>>>>> a49d9fde7bff7a44346dcd2e6e811de49a46384a
-
-  function showSpec(book) {
-    setClickedBook(book);
-    setCardVisible(false);
-  }
-
-  function backToBooks() {
-    setCardVisible(true);
-  }
 
   function handleSearch(e) {
     setBooks(
@@ -110,11 +63,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-<<<<<<< HEAD
       <Router>
         <Routes>
           <Route exact path="/books/:id" element={
-            <BookSpec checkout={checkout} clickedBook={clickedBook} backToBooks={backToBooks} />
+            <BookSpec checkout={checkout} />
           }/>
         </Routes>
         <Routes>
@@ -124,31 +76,13 @@ function App() {
         </Routes>
         <Routes>
           <Route exact path="/books" element={
-            <BookContainer books={books} handleSearch={handleSearch} showSpec={showSpec} />
+            <BookContainer books={books} handleSearch={handleSearch} />
           } />
         </Routes>
         <Routes>
           <Route exact path="/" element={<Info cafeCats={cafeCats}/>} />
         </Routes>
       </Router>
-
-    {/* {cardVisible ? (
-=======
-      <RenderCat
-        cat={oneCat}
-        nextCat={nextCat}
-        previousCat={previousCat}
-        backIsOn={backIsOn}
-        nextIsOn={nextIsOn}
-      />
-      <Search handleSearch={handleSearch} />
-      <Info takeSurvey={takeSurvey} />
-      {cardVisible ? (
->>>>>>> a49d9fde7bff7a44346dcd2e6e811de49a46384a
-        <BookContainer books={books} showSpec={showSpec} />
-      ) : (
-        <BookSpec clickedBook={clickedBook} backToBooks={backToBooks} />
-      )} */}
     </div>
   );
 }
