@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import "../index.css";
 import Header from "./Header";
 import BookContainer from "./BookContainer.js";
-import Cat from "./Cat";
-import Search from "./Search.js";
+// import Cat from "./Cat";
+// import Search from "./Search.js";
 import Info from "./Info.js";
 import BookSpec from "./BookSpec";
 import AdoptableCats from "./AdoptableCats";
-import { current } from "immer";
+// import { current } from "immer";
 
 // 'react-router-dom' Imports
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -15,17 +15,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const adoptableCatsAPI = "http://localhost:3000/adoptableCats";
 const cafeCatsAPI = "http://localhost:3000/cafeCats";
 const bookAPI = "http://localhost:3000/books";
+const potentialAdoptersAPI = "http://localhost:3000/potentialAdopters";
 
 function App() {
   const [cats, setCats] = useState([]);
   const [adoptableCats, setAdoptableCats] = useState([]);
   const [cafeCats, setCafeCats] = useState([]);
-  const [oneCat, setOneCat] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [backIsOn, setBackIsOn] = useState(false);
-  const [nextIsOn, setNextIsOn] = useState(true);
+  // const [oneCat, setOneCat] = useState([]);
+  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const [backIsOn, setBackIsOn] = useState(false);
+  // const [nextIsOn, setNextIsOn] = useState(true);
   const [books, setBooks] = useState([]);
-  const [cardVisible, setCardVisible] = useState(true);
+  // const [cardVisible, setCardVisible] = useState(true);
 
   useEffect(() => {
     fetch(adoptableCatsAPI)
@@ -57,7 +58,27 @@ function App() {
   }
 
   function checkout() {
-    console.log("POST request here")
+    console.log("Checkout book")
+  }
+
+  function handleAdoptionForm(e) {
+    e.preventDefault();
+
+    fetch(potentialAdoptersAPI, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: e.target.name.value,
+        phone: e.target.phone.value,
+        email: e.target.email.value,
+        catName: e.target.catName.value
+      })
+    })
+    .then(r => r.json())
+    .then(msg => console.log("potential adopter alert!", msg));
+
   }
 
   return (
@@ -71,7 +92,7 @@ function App() {
         </Routes>
         <Routes>
           <Route exact path="/adoptablecats" element={
-            <AdoptableCats adoptableCats={adoptableCats}/>
+            <AdoptableCats adoptableCats={adoptableCats} handleAdoptionForm={handleAdoptionForm}/>
           } />
         </Routes>
         <Routes>

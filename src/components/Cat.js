@@ -6,7 +6,7 @@ function Cat({cat}) {
       <div className="cat">
         <img className="catImage" src={cat.url} alt={cat.name} />
         <br />
-        <div clasName="catInfo">{cat.name}, {cat.gender}, {cat.age}</div>
+        <div className="catInfo">{cat.name}, {cat.gender}, {cat.age}</div>
         {/* {backIsOn ? (
           <button className="oldCompanion" onClick={() => previousCat(cat)}>
             Previous cat

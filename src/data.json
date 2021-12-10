@@ -15,7 +15,7 @@
       "title": "The Woman Outside My Door",
       "plot": "All children have imaginary friends, Georgina tells herself. It’s perfectly normal, and they all grow out of it in the end. But when her seven-year-old son, Cody, tells her about New Granny, the friend he’s met in the park, Georgina is instantly suspicious. Something—call it maternal instinct—tells her he isn’t making it up.\nBut maybe Georgina is losing her mind. It wouldn’t be the first time, after all. And with her own mother’s recent death leaving her bereft and trying to cope with life as a busy working mom, it’s no wonder she’s feeling paranoid that Cody has invented a “New Granny” to replace his beloved grandmother.\nHer husband, Bren, becomes the voice of reason, assuring Georgina that it’s just a game, the product of their son’s overactive imagination. But what if Cody’s imaginary friend is not so imaginary after all?",
       "author": "Rachel Ryan",
-      "category":  "Suspense & Thriller",
+      "category": "Suspense & Thriller",
       "pages": 288,
       "image": "./images/thewomanoutsidemydoor.jpeg",
       "checkedOut": false
@@ -299,9 +299,8 @@
       "pages": 336,
       "image": "./images/thisiswhereitends.jpeg",
       "checkedOut": false
-    }  
+    }
   ],
-
   "adoptableCats": [
     {
       "id": 1,
@@ -368,7 +367,6 @@
       "isIndoor": true
     }
   ],
-
   "cafeCats": [
     {
       "id": "1",
@@ -425,6 +423,15 @@
       "name": "Belle",
       "gender": "female",
       "age": "adult"
+    }
+  ],
+  "potentialAdopters": [
+    {
+      "name": "Seen",
+      "phone": "9071234456",
+      "email": "email@email.com",
+      "catName": "Cookie",
+      "id": 1
     }
   ]
 }
