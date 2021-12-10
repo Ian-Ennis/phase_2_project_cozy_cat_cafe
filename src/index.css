@@ -63,8 +63,24 @@ div.cat {
 }
 
 header {
-  text-align: right;
+  text-align: center;
   font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#welcomeCat {
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+#appTitle {
+  margin-left: 3%;
+}
+
+#navBar {
+  width: 100%;
 }
 
 div.BookContainer {
@@ -76,6 +92,11 @@ div.BookContainer {
 
 div.BookCard img {
   height: 300px;
+  width: auto;
+}
+
+img.bookCover {
+  height: 500px;
   width: auto;
 }
 

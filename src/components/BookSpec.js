@@ -33,7 +33,6 @@ function BookSpec({ checkout, clickedBook, backToBooks }) {
             <p>Plot: {bookDetail.plot}</p>
           </div>
           <div className="bookInfo">
-            <button onClick={() => checkout(bookDetail)}>Check out</button>
           </div>
         </div>
       </div>
