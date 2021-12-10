@@ -143,11 +143,11 @@
     {
       "id": 15,
       "title": "Fluent Forever: How to Learn Any Language Fast and Never Forget It",
-      "plot": "",
-      "author": "",
+      "plot": "At thirty years old, Gabriel Wyner speaks six languages fluently. He didn’t learn them in school—who does? Rather, he learned them in the past few years, working on his own and practicing on the subway, using simple techniques and free online resources—and here he wants to show others what he’s discovered.\nStarting with pronunciation, you’ll learn how to rewire your ears and turn foreign sounds into familiar sounds. You’ll retrain your tongue to produce those sounds accurately, using tricks from opera singers and actors. Next, you’ll begin to tackle words, and connect sounds and spellings to imagery rather than translations, which will enable you to think in a foreign language. And with the help of sophisticated spaced-repetition techniques, you’ll be able to memorize hundreds of words a month in minutes every day.\nThis is brain hacking at its most exciting, taking what we know about neuroscience and linguistics and using it to create the most efficient and enjoyable way to learn a foreign language in the spare minutes of your day.",
+      "author": "Gabriel Wyner",
       "category": "Foreign Language Study Aids & Dictionaries",
-      "pages": 0,
-      "image": "./images/.jpeg",
+      "pages": 336,
+      "image": "./images/fluentforever.jpeg",
       "checkedOut": false
     },
     {
@@ -306,6 +306,7 @@
     {
       "id": 1,
       "url": "https://cdn2.thecatapi.com/images/1v0.jpg",
+      "name": "Cleo",
       "gender": "female",
       "age": "kitten",
       "isIndoor": true
@@ -313,6 +314,7 @@
     {
       "id": 2,
       "url": "https://cdn2.thecatapi.com/images/MTY5NDczNA.jpg",
+      "name": "Henry",
       "gender": "male",
       "age": "kitten",
       "isIndoor": true
@@ -320,6 +322,7 @@
     {
       "id": 3,
       "url": "https://cdn2.thecatapi.com/images/edm.jpg",
+      "name": "Smoky",
       "gender": "female",
       "age": "kitten",
       "isIndoor": true
@@ -327,6 +330,7 @@
     {
       "id": 4,
       "url": "https://cdn2.thecatapi.com/images/dhm.jpg",
+      "name": "Oreo",
       "gender": "male",
       "age": "adult",
       "isIndoor": false
@@ -334,6 +338,7 @@
     {
       "id": 5,
       "url": "https://cdn2.thecatapi.com/images/MTg2NjU5NA.jpg",
+      "name": "Cookie",
       "gender": "male",
       "age": "kitten",
       "isIndoor": true
@@ -341,6 +346,7 @@
     {
       "id": 6,
       "url": "https://cdn2.thecatapi.com/images/ech.jpg",
+      "name": "Kelli",
       "gender": "female",
       "age": "adult",
       "isIndoor": false
@@ -348,6 +354,7 @@
     {
       "id": 7,
       "url": "https://cdn2.thecatapi.com/images/KpgTlVsKk.jpg",
+      "name": "Lucy",
       "gender": "female",
       "age": "adult",
       "isIndoor": true
@@ -355,6 +362,7 @@
     {
       "id": 8,
       "url": "https://cdn2.thecatapi.com/images/4TnpaIgoL.jpg",
+      "name": "Ginger",
       "gender": "male",
       "age": "adult",
       "isIndoor": true

@@ -2,40 +2,38 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from 'react-router-dom';
 
 function BookSpec({ checkout, clickedBook, backToBooks }) {
-  const [book, setBook] = useState(null);
+  const [bookDetail, setBookDetail] = useState({});
   const { id } = useParams();
   const history = useNavigate();
-
-  function handleBack() {
-    history.goBack();
-  }
 
   useEffect(() => {
     fetch(`http://localhost:3000/books/${id}`)
       .then((r) => r.json())
       .then((book) => {
-        setBook(book);
+        console.log({book})
+        setBookDetail(book);
       });
   }, [id]);
 
+  const bookCoverURLStub = `http://localhost:3000/`
+
   return (
     <div className="parentContainer">
-      <Link onClick={handleBack}>
-            Go Back
+      <Link to='/books'>
+        Go Back
       </Link>
       <div className="twoColumnCenteredGrid">
         <div className="row">
           <div className="bookCoverContainer">
-            <img className="bookCover" src={clickedBook.image} alt=""></img>
-            <div>{clickedBook.title}</div>
-            <div>by {clickedBook.author}</div>
-            <div>Category: {clickedBook.category}</div>
-            <div>Length: {clickedBook.pages} pages</div>
-            <p>Plot: {clickedBook.plot}</p>
+            <img className="bookCover" src={`${bookCoverURLStub}${bookDetail.image}`} alt="" />
+            <div>{bookDetail.title}</div>
+            <div>by {bookDetail.author}</div>
+            <div>Category: {bookDetail.category}</div>
+            <div>Length: {bookDetail.pages} pages</div>
+            <p>Plot: {bookDetail.plot}</p>
           </div>
           <div className="bookInfo">
-            <button onClick={() => checkout(book)}>Check out</button>
-            <button onClick={() => backToBooks()}>Back</button>
+            <button onClick={() => checkout(bookDetail)}>Check out</button>
           </div>
         </div>
       </div>

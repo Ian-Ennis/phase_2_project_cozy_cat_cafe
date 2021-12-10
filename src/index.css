@@ -1,75 +1,105 @@
 * {
   font-family: 'Montserrat', sans-serif;
-}
-.App {
-  display: grid;
-  grid-template-areas: 
-    "header header"
-    "cat bookContainer"
-    "search bookContainer"
-    "info bookContainer"
-    "companyInfo bookContainer";
-  grid-template-columns: 20% 80%;
   background-color: lavender;
+}
+
+a {
+  padding: 10px;
+}
+
+nav {
+  padding: 10px;
+}
+
+a:hover {
+  background-color: pink;
+}
+
+div.adoptableCats {
+  padding: 10px;
+  height: auto;
+  flex-wrap: wrap;
+  display: inline-flex;
+}
+
+.cat-adoption-form {
+  border-style: solid;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.cat-adoption-form input {
+  /* margin-right: 2rem;
+  flex: 1; */
+  padding: 10px;
+  margin: 10px;
+}
+div.cafeCats {
+  padding: 10px;
+  height: auto;
+  flex-wrap: wrap;
+  display: inline-flex;
+}
+
+div.cat, img {
+  width: 300px;
+}
+
+div.cat {
+  border-style: solid;
+  border-color: pink;
+  padding: 10px;
+  margin: 5px;
+  width: 300px;
+  display: grid;
+}
+
+.cafeCats {
+  padding: 20px;
+}
+
+.searchBar {
+  padding: 10px;
 }
 
 header {
   text-align: right;
   font-size: 40px;
-  grid-area: header;
 }
 
 div.BookContainer {
-  border-style: solid;
-  border-color: green;
   padding: 10px;
-  grid-area: bookContainer;
-  display: inline-block;
+  height: auto;
+  flex-wrap: wrap;
+  display: inline-flex;
 }
 
 div.BookCard img {
   height: 300px;
-  display: inline-grid;
-  align-content: center;
+  width: auto;
 }
 
 .BookCard {
-  border-style: solid;
-  border-color: lightblue;
   height: auto;
   width: 250px;
+  padding: 10px;
 }
 
-.cafeCats {
-  margin-left: 0%;
-  margin-top: -2%;
-  grid-area: cat
-}
 
 .cafeCatImg {
   max-width: 250px;
   max-height: 250px;
-  /* border-radius: 200px; */
 }
 
 .info {
-  /* margin-right: 59%; */
   border: 5px solid #000000;
   margin: 0px;
   padding: 11px;
-  /* margin-right: 70%; */
-  grid-area: info;
-}
-
-.companyInfo {
-  /* margin-top: 37%; */
 }
 
 .surveyButton {
   margin: 0;
   position: relative;
-  /* top: 78%;
-  left: 6%; */
 }
 
 .bookCover {
@@ -90,9 +120,3 @@ div.BookCard img {
 .row {
   display: flex;
 }
-
-.bookInfo {
-  margin-left: 0%;
-  margin-right:0%
-}
-
