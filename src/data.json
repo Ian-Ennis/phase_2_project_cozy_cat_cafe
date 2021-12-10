@@ -306,6 +306,7 @@
     {
       "id": 1,
       "url": "https://cdn2.thecatapi.com/images/1v0.jpg",
+      "name": "Cleo",
       "gender": "female",
       "age": "kitten",
       "isIndoor": true
@@ -313,6 +314,7 @@
     {
       "id": 2,
       "url": "https://cdn2.thecatapi.com/images/MTY5NDczNA.jpg",
+      "name": "Henry",
       "gender": "male",
       "age": "kitten",
       "isIndoor": true
@@ -320,6 +322,7 @@
     {
       "id": 3,
       "url": "https://cdn2.thecatapi.com/images/edm.jpg",
+      "name": "Smoky",
       "gender": "female",
       "age": "kitten",
       "isIndoor": true
@@ -327,6 +330,7 @@
     {
       "id": 4,
       "url": "https://cdn2.thecatapi.com/images/dhm.jpg",
+      "name": "Oreo",
       "gender": "male",
       "age": "adult",
       "isIndoor": false
@@ -334,6 +338,7 @@
     {
       "id": 5,
       "url": "https://cdn2.thecatapi.com/images/MTg2NjU5NA.jpg",
+      "name": "Cookie",
       "gender": "male",
       "age": "kitten",
       "isIndoor": true
@@ -341,6 +346,7 @@
     {
       "id": 6,
       "url": "https://cdn2.thecatapi.com/images/ech.jpg",
+      "name": "Kelli",
       "gender": "female",
       "age": "adult",
       "isIndoor": false
@@ -348,6 +354,7 @@
     {
       "id": 7,
       "url": "https://cdn2.thecatapi.com/images/KpgTlVsKk.jpg",
+      "name": "Lucy",
       "gender": "female",
       "age": "adult",
       "isIndoor": true
@@ -355,6 +362,7 @@
     {
       "id": 8,
       "url": "https://cdn2.thecatapi.com/images/4TnpaIgoL.jpg",
+      "name": "Ginger",
       "gender": "male",
       "age": "adult",
       "isIndoor": true

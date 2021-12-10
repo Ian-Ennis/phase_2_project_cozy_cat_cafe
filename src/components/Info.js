@@ -5,11 +5,7 @@ function Info(cafeCats, nextCat, previousCat, backIsOn, nextIsOn) {
   // cafeCats.cafeCat[0];
   return (
     <>
-    <div className="cafeCats">
-      {cafeCats.cafeCats.map(c => (
-        <Cat key={c.id} cat={c} nextCat={nextCat} previousCat={previousCat} backIsOn={backIsOn} nextIsOn={nextIsOn} />
-      ))}
-    </div>
+
 
       
       <div className="info">
@@ -19,6 +15,14 @@ function Info(cafeCats, nextCat, previousCat, backIsOn, nextIsOn) {
         </p>
         <div className="companyInfo">
         <p>Why don't cats play poker in the jungle? There's too many cheetahs!</p>
+        <h2>Our Cafe Cats</h2>
+        {/* render cafe cats */}
+        <div className="cafeCats">
+         {cafeCats.cafeCats.map(c => (
+            <Cat key={c.id} cat={c} nextCat={nextCat} previousCat={previousCat} backIsOn={backIsOn} nextIsOn={nextIsOn} />
+          ))}
+      </div>
+        <div></div>
         <h2>Company Info</h2>
         <p>Open Daily from 7AM - 5PM!</p>
         <p>2346 Meow Lane</p>

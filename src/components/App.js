@@ -120,7 +120,7 @@ function App() {
         </Routes>
       </Router>
 
-    {/*{cardVisible ? (
+    {/* {cardVisible ? (
         <BookContainer books={books} showSpec={showSpec} />
       ) : (
         <BookSpec clickedBook={clickedBook} backToBooks={backToBooks} />
