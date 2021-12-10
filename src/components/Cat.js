@@ -5,11 +5,11 @@ function Cat({cat, nextCat, previousCat, backIsOn, nextIsOn}) {
   //backIsOn = false
   return (
 <div>
-      <div className="cafeCats">
-        <img className="cafeCatImg" src={cat.url} alt="cafe_cat" />
+      <div className="cat">
+        <img className="catImage" src={cat.url} alt={cat.name} />
         <br />
-        <div>{cat.name}, {cat.gender}, {cat.age}</div>
-        {backIsOn ? (
+        <div clasName="catInfo">{cat.name}, {cat.gender}, {cat.age}</div>
+        {/* {backIsOn ? (
           <button className="oldCompanion" onClick={() => previousCat(cat)}>
             Previous cat
           </button>
@@ -18,7 +18,7 @@ function Cat({cat, nextCat, previousCat, backIsOn, nextIsOn}) {
           <button className="newCompanion" onClick={() => nextCat(cat)}>
             Next cat
           </button>
-        ) : null}
+        ) : null} */}
       </div>
     </div>
   );
