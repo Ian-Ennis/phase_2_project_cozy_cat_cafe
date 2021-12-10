@@ -63,6 +63,7 @@ div.BookContainer {
 
 div.BookCard img {
   height: 300px;
+  width: auto;
 }
 
 .BookCard {
