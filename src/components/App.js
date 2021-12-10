@@ -54,8 +54,6 @@ function App() {
       .catch((error) => console.log("ERROR fetching bookAPI", error));
   }, []);
 
-<<<<<<< HEAD
-=======
   function nextCat() {
     if (currentIndex > 6) {
       setNextIsOn(false);
@@ -84,7 +82,6 @@ function App() {
   function takeSurvey() {
     console.log("adopt me!");
   }
->>>>>>> a49d9fde7bff7a44346dcd2e6e811de49a46384a
 
   function showSpec(book) {
     setClickedBook(book);
