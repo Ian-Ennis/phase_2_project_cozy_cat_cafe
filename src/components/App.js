@@ -2,14 +2,9 @@ import React, { useEffect, useState } from "react";
 import "../index.css";
 import Header from "./Header";
 import BookContainer from "./BookContainer.js";
-// import Cat from "./Cat";
-// import Search from "./Search.js";
 import Info from "./Info.js";
 import BookSpec from "./BookSpec";
 import AdoptableCats from "./AdoptableCats";
-// import { current } from "immer";
-
-// 'react-router-dom' Imports
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const adoptableCatsAPI = "http://localhost:3000/adoptableCats";
@@ -21,12 +16,7 @@ function App() {
   const [cats, setCats] = useState([]);
   const [adoptableCats, setAdoptableCats] = useState([]);
   const [cafeCats, setCafeCats] = useState([]);
-  // const [oneCat, setOneCat] = useState([]);
-  // const [currentIndex, setCurrentIndex] = useState(0);
-  // const [backIsOn, setBackIsOn] = useState(false);
-  // const [nextIsOn, setNextIsOn] = useState(true);
   const [books, setBooks] = useState([]);
-  // const [cardVisible, setCardVisible] = useState(true);
 
   useEffect(() => {
     fetch(adoptableCatsAPI)
@@ -57,10 +47,6 @@ function App() {
     );
   }
 
-  function checkout() {
-    console.log("Checkout book")
-  }
-
   function handleAdoptionForm(e) {
     e.preventDefault();
 
@@ -87,7 +73,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/books/:id" element={
-            <BookSpec checkout={checkout} />
+            <BookSpec />
           }/>
         </Routes>
         <Routes>

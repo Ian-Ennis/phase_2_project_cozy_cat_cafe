@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from 'react-router-dom';
 
-function BookSpec({ checkout, clickedBook, backToBooks }) {
+function BookSpec() {
   const [bookDetail, setBookDetail] = useState({});
   const { id } = useParams();
   const history = useNavigate();
@@ -41,5 +41,3 @@ function BookSpec({ checkout, clickedBook, backToBooks }) {
 }
 
 export default BookSpec;
-
-//title, author, plot, category, pages, cover
