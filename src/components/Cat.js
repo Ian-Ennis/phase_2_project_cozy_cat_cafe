@@ -1,8 +1,6 @@
 import React from "react";
 
 function Cat({cat}) {
-  //nextIsOn = true
-  //backIsOn = false
   return (
 <div>
       <div className="cat">

@@ -54,6 +54,37 @@ function App() {
       .catch((error) => console.log("ERROR fetching bookAPI", error));
   }, []);
 
+<<<<<<< HEAD
+=======
+  function nextCat() {
+    if (currentIndex > 6) {
+      setNextIsOn(false);
+    }
+
+    if (currentIndex > 0) {
+      setBackIsOn(true);
+    }
+    setOneCat(cats.slice(currentIndex, currentIndex + 1));
+    setCurrentIndex(currentIndex + 1);
+  }
+
+  function previousCat() {
+    if (currentIndex < 9) {
+      setNextIsOn(true)
+    }
+
+    if (currentIndex < 3) {
+      setBackIsOn(false);
+    }
+
+    setOneCat(cats.slice(currentIndex - 2, currentIndex - 1));
+    setCurrentIndex(currentIndex - 1);
+  }
+
+  function takeSurvey() {
+    console.log("adopt me!");
+  }
+>>>>>>> a49d9fde7bff7a44346dcd2e6e811de49a46384a
 
   function showSpec(book) {
     setClickedBook(book);
@@ -65,7 +96,11 @@ function App() {
   }
 
   function handleSearch(e) {
-    setBooks(books.filter(b => b.title.toLowerCase().includes(e.target.value.toLowerCase())));
+    setBooks(
+      books.filter((b) =>
+        b.title.toLowerCase().includes(e.target.value.toLowerCase())
+      )
+    );
   }
 
   function checkout() {
@@ -75,6 +110,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+<<<<<<< HEAD
       <Router>
         <Routes>
           <Route exact path="/books/:id" element={
@@ -97,6 +133,18 @@ function App() {
       </Router>
 
     {/* {cardVisible ? (
+=======
+      <RenderCat
+        cat={oneCat}
+        nextCat={nextCat}
+        previousCat={previousCat}
+        backIsOn={backIsOn}
+        nextIsOn={nextIsOn}
+      />
+      <Search handleSearch={handleSearch} />
+      <Info takeSurvey={takeSurvey} />
+      {cardVisible ? (
+>>>>>>> a49d9fde7bff7a44346dcd2e6e811de49a46384a
         <BookContainer books={books} showSpec={showSpec} />
       ) : (
         <BookSpec clickedBook={clickedBook} backToBooks={backToBooks} />
