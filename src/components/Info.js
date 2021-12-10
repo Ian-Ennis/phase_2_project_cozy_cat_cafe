@@ -16,7 +16,7 @@ function Info(cafeCats, nextCat, previousCat, backIsOn, nextIsOn) {
         <div className="companyInfo">
         <p>Why don't cats play poker in the jungle? There's too many cheetahs!</p>
         <h2>Our Cafe Cats</h2>
-        {/* render cafe cats */}
+        <p>Cafe cats are a part of the Cozy Cat family and are not available for adoption. You are always welcome to come by to spend time with any one of them!</p>
         <div className="cafeCats">
          {cafeCats.cafeCats.map(c => (
             <Cat key={c.id} cat={c} nextCat={nextCat} previousCat={previousCat} backIsOn={backIsOn} nextIsOn={nextIsOn} />

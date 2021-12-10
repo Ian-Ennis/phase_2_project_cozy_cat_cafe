@@ -72,10 +72,6 @@ div.BookCard img {
   padding: 10px;
 }
 
-.cafeCats {
-  margin-left: 0%;
-  margin-top: -2%;
-}
 
 .cafeCatImg {
   max-width: 250px;
@@ -86,7 +82,6 @@ div.BookCard img {
   border: 5px solid #000000;
   margin: 0px;
   padding: 11px;
-  /* grid-area: info; */
 }
 
 .surveyButton {
@@ -112,9 +107,3 @@ div.BookCard img {
 .row {
   display: flex;
 }
-
-.bookInfo {
-  margin-left: 0%;
-  margin-right:0%
-}
-
