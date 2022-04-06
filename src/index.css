@@ -45,7 +45,6 @@ div.cafeCats {
 
 div.cat, img {
   width: 300px;
-  /* border-color: 2px solid #4e1d04; */
 }
 
 div.cat {
@@ -63,10 +62,17 @@ div.cat {
 }
 
 .searchBar {
-  padding: 10px;
+  text-align: center;
+  margin-top: 0%;
+  padding: 20px;
+}
+
+.searchBar input {
+  background-color: #f0ead1;
 }
 
 #appTitle {
+  margin-top: 4.5%;
   margin-left: 3%;
   color: #eadeac;
   -webkit-text-stroke-width: 1px;
@@ -74,14 +80,16 @@ div.cat {
 }
 
 #navBar {
+  margin-top: 1%;
   width: 100%;
 }
 
 div.bookContainer {
   padding: 10px;
   height: auto;
-  flex-wrap: wrap;
   display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px 20px;
 }
 
@@ -92,16 +100,11 @@ div.bookContainer {
 
 .bookTitle {
   width: auto;
-  height: 50px;
-  border: 1px solid #000;
-  color: #000;
-  float: left;
-  margin-left: 10px;
-  font-size: 15px
 }
 
 img.bookCover {
   height: 500px;
+  max-height: 2500px;
   width: auto;
 }
 
@@ -132,24 +135,16 @@ img.bookCover {
   position: relative;
 }
 
-/* .bookCard {
-  border: 2px solid black;
-  padding: 20px;
-} */
-
 .bookCover {
   width: 100%;
   height: 100%;
 }
 
 .parentContainer {
+  text-align: center;
   position: relative;
   background: #FFE;
   padding: 1em 1em;
-}
-
-.twoColumnCenteredGrid {
-  text-align: center;
 }
 
 .row {

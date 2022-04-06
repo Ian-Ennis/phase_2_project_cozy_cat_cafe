@@ -19,8 +19,6 @@ function BookSpec() {
     <div className="parentContainer">
       <Link to="/books">Go Back</Link>
       <div className="twoColumnCenteredGrid">
-        <div className="row">
-          <div className="bookCoverContainer">
             <img
               className="bookCover"
               src={`${bookCoverURLStub}${bookDetail.image}`}
@@ -32,9 +30,6 @@ function BookSpec() {
             <div>Length: {bookDetail.pages} pages</div>
             <p>Plot: {bookDetail.plot}</p>
           </div>
-          <div className="bookInfo"></div>
-        </div>
-      </div>
     </div>
   );
 }

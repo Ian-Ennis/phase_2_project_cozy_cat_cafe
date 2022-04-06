@@ -10,7 +10,7 @@ function BookCard({ book, showSpec }) {
       <div className="bookImg">
         <img src={book.image} alt={book.title} />
       </div>
-      <button onClick={() => showSpec(book)}>See More</button>
+      <button onClick={() => showSpec(book)}>View details</button>
     </div>
   );
 }
