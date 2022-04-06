@@ -11,6 +11,14 @@ header {
   justify-content: center;
 }
 
+#appTitle {
+  margin-top: 4.5%;
+  margin-left: 3%;
+  color: #f0ead1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
 #welcomeCat {
   margin-top: 0%;
   margin-left: 0%;
@@ -19,12 +27,11 @@ header {
 
 a:link {
   padding: 10px;
-  color: blue;
+  color: rgb(2, 2, 180);
 }
 
 a:visited {
   color: #4e1d04;
-  /* color: rgb(2, 2, 134); */
 }
 
 nav {
@@ -38,8 +45,9 @@ a:hover {
 div.cafeCats {
   padding: 20px;
   height: auto;
-  flex-wrap: wrap;
   display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px 20px;
 }
 
@@ -49,7 +57,6 @@ div.cat, img {
 
 div.cat {
   border-style: solid;
-  /* border-color: #eacf5a; */
   border-color: #000000;
   padding: 20px;
   margin: 5px;
@@ -64,6 +71,7 @@ div.cat {
 .searchBar {
   text-align: center;
   margin-top: 0%;
+  margin-bottom: -1%;
   padding: 20px;
 }
 
@@ -71,13 +79,6 @@ div.cat {
   background-color: #f0ead1;
 }
 
-#appTitle {
-  margin-top: 4.5%;
-  margin-left: 3%;
-  color: #eadeac;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
 
 #navBar {
   margin-top: 1%;
@@ -87,6 +88,8 @@ div.cat {
 div.bookContainer {
   padding: 10px;
   height: auto;
+  margin-left: 40px;
+  margin-right: 40px;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -119,6 +122,16 @@ img.bookCover {
   border: 2px solid #000000;
 }
 
+#viewDetails {
+  position: absolute;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+#backToBooks {
+  margin-left: -90%;
+}
+
 .cafeCatImg {
   max-width: 250px;
   max-height: 250px;
@@ -126,8 +139,9 @@ img.bookCover {
 
 .info {
   border: 5px solid #000000;
-  margin: 0px;
-  padding: 11px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px;
 }
 
 .surveyButton {
@@ -141,11 +155,20 @@ img.bookCover {
 }
 
 .parentContainer {
+  max-width: 50%;
+  margin: 0 auto;
   text-align: center;
   position: relative;
-  background: #FFE;
-  padding: 1em 1em;
+  border: 2px solid black;
+  padding: 20px;
 }
+
+#plot {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
 
 .row {
   display: flex;
@@ -154,20 +177,28 @@ img.bookCover {
 div.adoptableCats {
   padding: 20px;
   height: auto;
-  flex-wrap: wrap;
+  max-width: 90%;
   display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px 20px;
 }
 
 .cat-adoption-form {
+  margin-left: 40px;
+  margin-right: 40px;
   border-style: solid;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .cat-adoption-form input {
   padding: 10px;
   margin: 10px;
   background-color: #f0ead1;
+}
+
+#inquiry_response {
+  text-align: center;
+  margin-bottom: 0%;
 }

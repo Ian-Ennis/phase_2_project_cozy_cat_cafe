@@ -17,18 +17,18 @@ function BookSpec() {
 
   return (
     <div className="parentContainer">
-      <Link to="/books">Go Back</Link>
+      <Link id="backToBooks" to="/books">Back to library</Link>
       <div className="twoColumnCenteredGrid">
             <img
               className="bookCover"
               src={`${bookCoverURLStub}${bookDetail.image}`}
               alt=""
             />
-            <div>{bookDetail.title}</div>
+            <div><b>{bookDetail.title}</b></div>
             <div>by {bookDetail.author}</div>
-            <div>Category: {bookDetail.category}</div>
+            <div>Category: <em>{bookDetail.category}</em></div>
             <div>Length: {bookDetail.pages} pages</div>
-            <p>Plot: {bookDetail.plot}</p>
+            <p id="plot">{bookDetail.plot}</p>
           </div>
     </div>
   );

@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function BookCard({ book, showSpec }) {
+function BookCard({ book, setCardVisible }) {
+  const history = useNavigate();
+
+  function showSpec(book) {
+    history(`/books/${book.id}`);
+    setCardVisible(false);
+  }
+
   return (
     <div className="bookCard">
       <h2 className="bookTitle">{book.title}</h2>
@@ -10,7 +18,7 @@ function BookCard({ book, showSpec }) {
       <div className="bookImg">
         <img src={book.image} alt={book.title} />
       </div>
-      <button onClick={() => showSpec(book)}>View details</button>
+      <button id="viewDetails" onClick={() => showSpec(book)}>View details</button>
     </div>
   );
 }

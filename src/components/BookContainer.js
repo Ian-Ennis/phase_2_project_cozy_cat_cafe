@@ -1,15 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import BookCard from "./BookCard";
 import Search from "./Search";
-import { useNavigate } from "react-router-dom";
 
-function BookContainer({ books, handleSearch }) {
-  const history = useNavigate();
+function BookContainer({ handleSearch }) {
   const [cardVisible, setCardVisible] = useState(true);
+  const [books, setBooks] = useState([]);
 
-  function showSpec(book) {
-    history(`/books/${book.id}`);
-    setCardVisible(false);
+  useEffect(() => {
+    fetch(`http://localhost:3000/books`)
+      .then((r) => r.json())
+      .then((data) => setBooks(data))
+      .catch((error) => console.log("ERROR fetching bookAPI", error));
+  }, []);
+
+  function handleSearch(e) {
+    setBooks(
+      books.filter((b) =>
+        b.title.toLowerCase().includes(e.target.value.toLowerCase())
+      )
+    );
   }
 
   return (
@@ -18,7 +27,7 @@ function BookContainer({ books, handleSearch }) {
       {cardVisible && (
         <div className="bookContainer">
           {books.map((b) => (
-            <BookCard key={b.id} book={b} showSpec={showSpec} />
+            <BookCard key={b.id} book={b} setCardVisible={setCardVisible} />
           ))}
         </div>
       )}

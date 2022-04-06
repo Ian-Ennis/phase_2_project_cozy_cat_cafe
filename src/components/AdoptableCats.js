@@ -1,11 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Cat from "./Cat";
 
-function AdoptableCats({ adoptableCats, handleAdoptionForm }) {
+function AdoptableCats() {
+  const [adoptableCats, setAdoptableCats] = useState([]);
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/adoptableCats`, {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((r) => r.json())
+      .then((data) => setAdoptableCats(data));
+  }, []);
+
+  function handleAdoptionForm(e) {
+    e.preventDefault();
+
+    fetch(`http://localhost:3000/potentialAdopters`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: e.target.name.value,
+        phone: e.target.phone.value,
+        email: e.target.email.value,
+        catName: e.target.catName.value,
+      }),
+    }).then((r) => {
+      r.json();
+      alert("We have received your inquiry. Thank you!");
+    });
+  }
+
   return (
     <>
       <div className="cat-adoption-form">
-        <h2>Cat Adoption Form</h2>
+        <h2>Adoption Inquiry Form</h2>
         <form onSubmit={(e) => handleAdoptionForm(e)}>
           <input type="text" name="name" placeholder="Your name" />
           <input type="phone" name="phone" placeholder="Your phone number" />
@@ -14,6 +47,9 @@ function AdoptableCats({ adoptableCats, handleAdoptionForm }) {
           <button type="submit">Submit</button>
         </form>
       </div>
+      <p id="inquiry_response">
+        <em>We will respond to inquiries within two business days</em>
+      </p>
       <div className="adoptableCats">
         {adoptableCats.map((c) => (
           <Cat key={c.id} cat={c} />

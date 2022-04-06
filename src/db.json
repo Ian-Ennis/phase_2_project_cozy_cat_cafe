@@ -426,19 +426,5 @@
     }
   ],
   "potentialAdopters": [
-    {
-      "name": "Seen",
-      "phone": "9071234456",
-      "email": "email@email.com",
-      "catName": "Cookie",
-      "id": 1
-    },
-    {
-      "name": "Ian",
-      "phone": "5555555555",
-      "email": "fake@gmail.com",
-      "catName": "Henry",
-      "id": 2
-    }
   ]
 }

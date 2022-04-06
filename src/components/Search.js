@@ -8,7 +8,7 @@ function Search({ handleSearch }) {
       <input
         type="text"
         id="search"
-        placeholder="Type title here"
+        placeholder="By title"
         onChange={(e) => handleSearch(e)}
       />
     </div>
