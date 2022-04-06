@@ -5,12 +5,12 @@ import BookContainer from "./BookContainer.js";
 import Info from "./Info.js";
 import BookSpec from "./BookSpec";
 import AdoptableCats from "./AdoptableCats";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
-const adoptableCatsAPI = "http://localhost:3000/adoptableCats";
-const cafeCatsAPI = "http://localhost:3000/cafeCats";
-const bookAPI = "http://localhost:3000/books";
-const potentialAdoptersAPI = "http://localhost:3000/potentialAdopters";
+const adoptableCatsAPI = `http://localhost:3000/adoptableCats`;
+const cafeCatsAPI = `http://localhost:3000/cafeCats`;
+const bookAPI = `http://localhost:3000/books`;
+const potentialAdoptersAPI = `http://localhost:3000/potentialAdopters`;
 
 function App() {
   const [cats, setCats] = useState([]);
@@ -19,10 +19,16 @@ function App() {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch(adoptableCatsAPI)
-    .then(r => r.json())
-    .then(setAdoptableCats)
+    fetch(adoptableCatsAPI, {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((r) => r.json())
+      .then((data) => setAdoptableCats(data));
   }, []);
+
   useEffect(() => {
     fetch(cafeCatsAPI)
       .then((r) => r.json())
@@ -35,7 +41,7 @@ function App() {
   useEffect(() => {
     fetch(bookAPI)
       .then((r) => r.json())
-      .then(setBooks)
+      .then((data) => setBooks(data))
       .catch((error) => console.log("ERROR fetching bookAPI", error));
   }, []);
 
@@ -51,45 +57,43 @@ function App() {
     e.preventDefault();
 
     fetch(potentialAdoptersAPI, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         name: e.target.name.value,
         phone: e.target.phone.value,
         email: e.target.email.value,
-        catName: e.target.catName.value
-      })
+        catName: e.target.catName.value,
+      }),
     })
-    .then(r => r.json())
-    .then(msg => console.log("potential adopter alert!", msg));
-
+      .then((r) => r.json())
+      .then((msg) => console.log("potential adopter alert!", msg));
   }
 
   return (
     <div className="App">
       <Header />
-      <Router>
-        <Routes>
-          <Route exact path="/books/:id" element={
-            <BookSpec />
-          }/>
-        </Routes>
-        <Routes>
-          <Route exact path="/adoptablecats" element={
-            <AdoptableCats adoptableCats={adoptableCats} handleAdoptionForm={handleAdoptionForm}/>
-          } />
-        </Routes>
-        <Routes>
-          <Route exact path="/books" element={
-            <BookContainer books={books} handleSearch={handleSearch} />
-          } />
-        </Routes>
-        <Routes>
-          <Route exact path="/" element={<Info cafeCats={cafeCats}/>} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route exact path="/" element={<Info cafeCats={cafeCats} />} />
+        <Route
+          exact
+          path="/books"
+          element={<BookContainer books={books} handleSearch={handleSearch} />}
+        />
+        <Route exact path="/books/:id" element={<BookSpec />} />
+        <Route
+          exact
+          path="/adoptablecats"
+          element={
+            <AdoptableCats
+              adoptableCats={adoptableCats}
+              handleAdoptionForm={handleAdoptionForm}
+            />
+          }
+        />
+      </Routes>
     </div>
   );
 }

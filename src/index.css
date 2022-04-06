@@ -1,65 +1,6 @@
 * {
   font-family: 'Montserrat', sans-serif;
-  background-color: lavender;
-}
-
-a {
-  padding: 10px;
-}
-
-nav {
-  padding: 10px;
-}
-
-a:hover {
-  background-color: pink;
-}
-
-div.adoptableCats {
-  padding: 10px;
-  height: auto;
-  flex-wrap: wrap;
-  display: inline-flex;
-}
-
-.cat-adoption-form {
-  border-style: solid;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.cat-adoption-form input {
-  /* margin-right: 2rem;
-  flex: 1; */
-  padding: 10px;
-  margin: 10px;
-}
-div.cafeCats {
-  padding: 10px;
-  height: auto;
-  flex-wrap: wrap;
-  display: inline-flex;
-}
-
-div.cat, img {
-  width: 300px;
-}
-
-div.cat {
-  border-style: solid;
-  border-color: pink;
-  padding: 10px;
-  margin: 5px;
-  width: 300px;
-  display: grid;
-}
-
-.cafeCats {
-  padding: 20px;
-}
-
-.searchBar {
-  padding: 10px;
+  background-color: #86afb2;
 }
 
 header {
@@ -73,26 +14,90 @@ header {
 #welcomeCat {
   margin-top: 0%;
   margin-left: 0%;
+  border: 2px solid black;
+}
+
+a:link {
+  padding: 10px;
+  color: blue;
+}
+
+a:visited {
+  color: #4e1d04;
+  /* color: rgb(2, 2, 134); */
+}
+
+nav {
+  padding: 10px;
+}
+
+a:hover {
+  background-color: #dcbe87;
+}
+
+div.cafeCats {
+  padding: 20px;
+  height: auto;
+  flex-wrap: wrap;
+  display: inline-flex;
+  gap: 20px 20px;
+}
+
+div.cat, img {
+  width: 300px;
+  /* border-color: 2px solid #4e1d04; */
+}
+
+div.cat {
+  border-style: solid;
+  /* border-color: #eacf5a; */
+  border-color: #000000;
+  padding: 20px;
+  margin: 5px;
+  width: 300px;
+  display: grid;
+}
+
+.cafeCats {
+  padding: 20px;
+}
+
+.searchBar {
+  padding: 10px;
 }
 
 #appTitle {
   margin-left: 3%;
+  color: #eadeac;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 #navBar {
   width: 100%;
 }
 
-div.BookContainer {
+div.bookContainer {
   padding: 10px;
   height: auto;
   flex-wrap: wrap;
   display: inline-flex;
+  gap: 20px 20px;
 }
 
-div.BookCard img {
+.bookCard img {
   height: 300px;
   width: auto;
+}
+
+.bookTitle {
+  width: auto;
+  height: 50px;
+  border: 1px solid #000;
+  color: #000;
+  float: left;
+  margin-left: 10px;
+  font-size: 15px
 }
 
 img.bookCover {
@@ -100,12 +105,16 @@ img.bookCover {
   width: auto;
 }
 
-.BookCard {
-  height: auto;
-  width: 250px;
-  padding: 10px;
+.bookImg {
+  text-align: center;
 }
 
+.bookCard {
+  height: auto;
+  width: 250px;
+  padding: 20px;
+  border: 2px solid #000000;
+}
 
 .cafeCatImg {
   max-width: 250px;
@@ -122,6 +131,11 @@ img.bookCover {
   margin: 0;
   position: relative;
 }
+
+/* .bookCard {
+  border: 2px solid black;
+  padding: 20px;
+} */
 
 .bookCover {
   width: 100%;
@@ -140,4 +154,25 @@ img.bookCover {
 
 .row {
   display: flex;
+}
+
+div.adoptableCats {
+  padding: 20px;
+  height: auto;
+  flex-wrap: wrap;
+  display: inline-flex;
+  gap: 20px 20px;
+}
+
+.cat-adoption-form {
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cat-adoption-form input {
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0ead1;
 }
