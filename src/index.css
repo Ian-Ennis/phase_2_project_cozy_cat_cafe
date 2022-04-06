@@ -4,6 +4,7 @@
 }
 
 header {
+  margin-top: 2%;
   text-align: center;
   font-size: 40px;
   display: flex;
@@ -27,7 +28,7 @@ header {
 
 a:link {
   padding: 10px;
-  color: rgb(2, 2, 180);
+  color: #ddb75f;
 }
 
 a:visited {
@@ -39,7 +40,7 @@ nav {
 }
 
 a:hover {
-  background-color: #dcbe87;
+  background-color: #f0ead1;
 }
 
 div.cafeCats {
@@ -122,10 +123,9 @@ img.bookCover {
   border: 2px solid #000000;
 }
 
-#viewDetails {
+.viewDetails {
   position: absolute;
-  margin-left: 5px;
-  margin-bottom: 5px;
+  margin-left: 75px;
 }
 
 #backToBooks {

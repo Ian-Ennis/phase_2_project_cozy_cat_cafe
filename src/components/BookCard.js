@@ -18,7 +18,7 @@ function BookCard({ book, setCardVisible }) {
       <div className="bookImg">
         <img src={book.image} alt={book.title} />
       </div>
-      <button id="viewDetails" onClick={() => showSpec(book)}>View details</button>
+      <button className="viewDetails" onClick={() => showSpec(book)}>View details</button>
     </div>
   );
 }
