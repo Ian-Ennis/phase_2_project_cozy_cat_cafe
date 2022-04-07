@@ -30,6 +30,11 @@ nav {
   padding: 10px;
 }
 
+#navBar {
+  margin-top: 1%;
+  width: 100%;
+}
+
 a:link {
   padding: 10px;
   color: #ddb75f;
@@ -59,25 +64,26 @@ a:visited {
   gap: 20px 20px;
 }
 
-div.cat, img {
-  width: 300px;
-}
-
-div.cat {
+.cat {
   border-style: solid;
   border-color: #000000;
   padding: 20px;
   margin: 5px;
-  width: 300px;
-  display: grid;
+  width: 200px;
 }
 
-.cafeCats {
-  padding: 20px;
+.catImg {
+  width: 90%;
+}
+
+.cafeCatInfo {
+  margin: 0 auto;
 }
 
 .searchBar {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   margin-top: 0%;
   margin-bottom: -1%;
   padding: 20px;
@@ -85,15 +91,11 @@ div.cat {
 
 .searchBar input {
   background-color: #f0ead1;
+  max-width: 15%;
+  margin: 0 auto;
 }
 
-
-#navBar {
-  margin-top: 1%;
-  width: 100%;
-}
-
-div.bookContainer {
+.bookContainer {
   padding: 10px;
   height: auto;
   margin-left: 40px;
@@ -104,12 +106,19 @@ div.bookContainer {
   gap: 20px 20px;
 }
 
-.bookCard img {
-  height: 300px;
-  width: auto;
+.bookCard {
+  height: auto;
+  width: 250px;
+  padding: 20px;
+  border: 2px solid #000000;
 }
 
 .bookTitle {
+  width: auto;
+}
+
+.bookCard img {
+  height: 300px;
   width: auto;
 }
 
@@ -121,45 +130,9 @@ img.bookCover {
   text-align: center;
 }
 
-.bookInfo {
-  text-align: center;
-  background-color: #f0ead1;
-}
-
-.infoLine {
-  background-color: #f0ead1;
-}
-
-.bookCard {
-  height: auto;
-  width: 250px;
-  padding: 20px;
-  border: 2px solid #000000;
-}
-
 .viewDetails {
   position: absolute;
   margin-left: 75px;
-}
-
-#backToBooks {
-  margin: 0px;
-  background-color: #f0ead1;
-}
-
-.cafeCatImg {
-  max-width: 250px;
-  max-height: 250px;
-}
-
-.surveyButton {
-  margin: 0;
-  position: relative;
-}
-
-.bookCover {
-  width: 100%;
-  height: 100%;
 }
 
 .parentContainer {
@@ -172,26 +145,30 @@ img.bookCover {
   padding: 20px;
 }
 
+#backToBooks {
+  margin: 0px;
+  background-color: #f0ead1;
+}
+
+.bookCover {
+  width: 100%;
+  height: 100%;
+}
+
+.bookInfo {
+  text-align: center;
+  background-color: #f0ead1;
+}
+
+.infoLine {
+  background-color: #f0ead1;
+}
+
 #plot {
   max-width: 90%;
   margin: 0 auto;
   margin-top: 3%;
   background-color: #f0ead1;
-}
-
-
-.row {
-  display: flex;
-}
-
-div.adoptableCats {
-  padding: 20px;
-  height: auto;
-  max-width: 90%;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px 20px;
 }
 
 .cat-adoption-form {
@@ -212,3 +189,19 @@ div.adoptableCats {
   text-align: center;
   margin-bottom: 0%;
 }
+
+.adoptableCats {
+  padding: 20px;
+  height: auto;
+  max-width: 90%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 20px;
+}
+
+.row {
+  display: flex;
+}
+
+

@@ -4,7 +4,6 @@ function Search({ handleSearch }) {
   return (
     <div className="searchBar">
       <label htmlFor="search">Search Books:</label>
-      <br />
       <input
         type="text"
         id="search"

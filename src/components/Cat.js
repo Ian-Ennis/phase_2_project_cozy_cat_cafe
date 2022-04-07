@@ -2,14 +2,9 @@ import React from "react";
 
 function Cat({ cat }) {
   return (
-    <div>
-      <div className="cat">
-        <img src={cat.url} alt={cat.name} />
-        <br />
-        <div className="catInfo">
-          {cat.name}, {cat.gender}, {cat.age}
-        </div>
-      </div>
+    <div className="cat">
+      <img className="catImg" src={cat.url} alt={cat.name} />
+        <p className="cafeCatInfo">{cat.name}, {cat.gender}, {cat.age}</p>
     </div>
   );
 }
