@@ -15,8 +15,8 @@ function Info(cafeCats) {
         <p>2346 Meow Lane, Corvallis, Oregon</p>
         <p>541-477-9876</p>
         <p>CozyCatCafe@gmail.com</p>
-        <h2 className="adoptionHeader">Adoption Services</h2>
-        <p className={"adoptionParagraph"}>
+        <h2>Adoption Services</h2>
+        <p>
           Looking for a fuzzy new addition to your home? See the Adoptable Cats
           page.
         </p>

@@ -3,16 +3,14 @@ import "../index.css";
 import Header from "./Header";
 import BookContainer from "./BookContainer.js";
 import Info from "./Info.js";
-import BookSpec from "./BookSpec";
+import BookDetails from "./BookDetails";
 import AdoptableCats from "./AdoptableCats";
 import { Routes, Route } from "react-router-dom";
 
 const cafeCatsAPI = `http://localhost:3000/cafeCats`;
-const bookAPI = `http://localhost:3000/books`;
 
 function App() {
   const [cats, setCats] = useState([]);
-  const [adoptableCats, setAdoptableCats] = useState([]);
   const [cafeCats, setCafeCats] = useState([]);
 
   useEffect(() => {
@@ -34,7 +32,7 @@ function App() {
           path="/books"
           element={<BookContainer />}
         />
-        <Route exact path="/books/:id" element={<BookSpec />} />
+        <Route exact path="/books/:id" element={<BookDetails />} />
         <Route
           exact
           path="/adoptablecats"

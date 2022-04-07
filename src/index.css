@@ -12,6 +12,12 @@ header {
   justify-content: center;
 }
 
+#welcomeCat {
+  margin-top: 0%;
+  margin-left: 0%;
+  border: 2px solid black;
+}
+
 #appTitle {
   margin-top: 4.5%;
   margin-left: 3%;
@@ -20,10 +26,8 @@ header {
   -webkit-text-stroke-color: black;
 }
 
-#welcomeCat {
-  margin-top: 0%;
-  margin-left: 0%;
-  border: 2px solid black;
+nav {
+  padding: 10px;
 }
 
 a:link {
@@ -31,19 +35,22 @@ a:link {
   color: #ddb75f;
 }
 
-a:visited {
-  color: #4e1d04;
-}
-
-nav {
-  padding: 10px;
-}
-
 a:hover {
   background-color: #f0ead1;
 }
 
-div.cafeCats {
+a:visited {
+  color: #4e1d04;
+}
+
+.info {
+  border: 5px solid #000000;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px;
+}
+
+.cafeCats {
   padding: 20px;
   height: auto;
   display: inline-flex;
@@ -107,13 +114,20 @@ div.bookContainer {
 }
 
 img.bookCover {
-  height: 500px;
-  max-height: 2500px;
-  width: auto;
+  margin: 0 auto;
 }
 
 .bookImg {
   text-align: center;
+}
+
+.bookInfo {
+  text-align: center;
+  background-color: #f0ead1;
+}
+
+.infoLine {
+  background-color: #f0ead1;
 }
 
 .bookCard {
@@ -129,19 +143,13 @@ img.bookCover {
 }
 
 #backToBooks {
-  margin-left: -90%;
+  margin: 0px;
+  background-color: #f0ead1;
 }
 
 .cafeCatImg {
   max-width: 250px;
   max-height: 250px;
-}
-
-.info {
-  border: 5px solid #000000;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding: 20px;
 }
 
 .surveyButton {
@@ -155,18 +163,20 @@ img.bookCover {
 }
 
 .parentContainer {
+  background-color: #f0ead1;
+  display: flex;
+  flex-direction: column;
   max-width: 50%;
   margin: 0 auto;
-  text-align: center;
-  position: relative;
   border: 2px solid black;
   padding: 20px;
 }
 
 #plot {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   margin-top: 3%;
+  background-color: #f0ead1;
 }
 
 
