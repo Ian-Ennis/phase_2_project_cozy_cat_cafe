@@ -35,11 +35,11 @@ Cozy Cat Cafe is a place where one can unwind, browse through books, and pet (or
 
 
 ## Screenshots
-![main_page](https://github.com/Ian-Ennis/sigma_shipyards/blob/main/public/deliverables/login.png)
+![main_page](https://github.com/Ian-Ennis/phase_2_project_cozy_cat_cafe/blob/main/public/main_page.png)
 
-![library](https://github.com/Ian-Ennis/sigma_shipyards/blob/main/public/deliverables/mission_select.png)
+![library](https://github.com/Ian-Ennis/phase_2_project_cozy_cat_cafe/blob/main/public/library.png)
 
-![adoption](https://github.com/Ian-Ennis/sigma_shipyards/blob/main/public/deliverables/shipyard.png)
+![adoption](https://github.com/Ian-Ennis/phase_2_project_cozy_cat_cafe/blob/main/public/adoption.png)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
