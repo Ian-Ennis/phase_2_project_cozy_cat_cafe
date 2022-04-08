@@ -3,7 +3,7 @@
 
 ## Project Concept
 
-Cozy Cat Cafe is a place where one can unwind, browse through books, and pet (or get bitten) by some crazy cats (we have those here...) and submit adoption forms for the non-crazy ones.
+Cozy Cat Cafe is a place where one can unwind, browse through books, and pet (or get bitten) by some crazy cats (we have those here...) and submit adoption forms for the non-crazy ones
 
 ## User stories
 
@@ -27,4 +27,21 @@ Cozy Cat Cafe is a place where one can unwind, browse through books, and pet (or
   ```sh
   json-server --watch ./src/db.json
   ```
+
+
+## Built With
+
+* [React.js](https://reactjs.org/)
+
+
+## Screenshots
+![main_page](https://github.com/Ian-Ennis/sigma_shipyards/blob/main/public/deliverables/login.png)
+
+![library](https://github.com/Ian-Ennis/sigma_shipyards/blob/main/public/deliverables/mission_select.png)
+
+![adoption](https://github.com/Ian-Ennis/sigma_shipyards/blob/main/public/deliverables/shipyard.png)
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
