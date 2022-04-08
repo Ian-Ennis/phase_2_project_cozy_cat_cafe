@@ -21,12 +21,12 @@ function Info(cafeCats) {
           page.
         </p>
         <p>
-          <b>Joke of the month:</b> Why don't cats play poker in the jungle? There's too many cheetahs!
+          Joke of the month: Why don't cats play poker in the jungle? There's too many cheetahs!
         </p>
         <h2>Our Cafe Cats</h2>
         <p>
           Cafe cats are a part of the Cozy Cat family and are not available for
-          adoption. Mainly because they will: make your socks disappear, likely alienate your dog, and <em>most defintely</em> annihilate your sleep schedule. (On second thought, maybe you can have some of them!). All jokes and seriousness aside, you are always welcome to come by and spend time with them!
+          adoption. Mainly because they will: make your socks disappear, likely alienate your dog, and most defintely annihilate your sleep schedule. (On second thought, maybe you can have some of them!). All jokes and seriousness aside, you are always welcome to come by and spend time with them!
         </p>
         <div className="cafeCats">
           {cafeCats.cafeCats.map((c) => (

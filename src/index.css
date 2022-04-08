@@ -55,6 +55,10 @@ a:visited {
   padding: 20px;
 }
 
+.info p {
+  background-color: #86afb2;
+}
+
 .cafeCats {
   padding: 20px;
   height: auto;
@@ -70,6 +74,10 @@ a:visited {
   padding: 20px;
   margin: 5px;
   width: 200px;
+}
+
+.cat p {
+  background-color: #86afb2;
 }
 
 .catImg {
@@ -111,6 +119,11 @@ a:visited {
   width: 250px;
   padding: 20px;
   border: 2px solid #000000;
+  background-color: #f0ead1;
+}
+
+.bookCard h2, h3, p, button {
+background-color: #f0ead1;
 }
 
 .bookTitle {
@@ -128,6 +141,7 @@ img.bookCover {
 
 .bookImg {
   text-align: center;
+  background-color: #f0ead1;
 }
 
 .viewDetails {
@@ -151,12 +165,16 @@ img.bookCover {
 }
 
 .bookCover {
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  margin: 0 auto;
 }
 
 .bookInfo {
   text-align: center;
+  background-color: #f0ead1;
+}
+
+.bookInfo p, b, em {
   background-color: #f0ead1;
 }
 
@@ -188,6 +206,14 @@ img.bookCover {
 #inquiry_response {
   text-align: center;
   margin-bottom: 0%;
+}
+
+#inquiry_response em {
+  background-color: #86afb2;
+}
+
+.inquiry p {
+  background-color: #86afb2;
 }
 
 .adoptableCats {

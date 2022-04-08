@@ -26,7 +26,7 @@ function BookSpec() {
           alt=""
         />
         <div className="bookInfo">
-          <p className="infoLine">
+          <p>
             <b>{bookDetail.title}</b>
           </p>
           <p>by {bookDetail.author}</p>

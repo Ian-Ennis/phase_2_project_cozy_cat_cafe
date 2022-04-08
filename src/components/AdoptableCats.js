@@ -47,9 +47,11 @@ function AdoptableCats() {
           <button type="submit">Submit</button>
         </form>
       </div>
-      <p id="inquiry_response">
-        <em>We will respond to inquiries within two business days</em>
-      </p>
+      <div className="inquiry">
+        <p id="inquiry_response">
+          <em>We will respond to inquiries within two business days</em>
+        </p>
+      </div>
       <div className="adoptableCats">
         {adoptableCats.map((c) => (
           <Cat key={c.id} cat={c} />
